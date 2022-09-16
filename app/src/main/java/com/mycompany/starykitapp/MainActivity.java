@@ -7,6 +7,7 @@ import android.os.Bundle;
 
 import com.mycompany.starykitapp.databinding.ActivityMainBinding;
 import com.mycompany.starykitapp.home.HomeActivity;
+import com.mycompany.starykitapp.login.view.LoginActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         binding.btnJump.setOnClickListener(v -> {
-            Intent intent = new Intent(v.getContext(), HomeActivity.class);
+            Intent intent = new Intent(v.getContext(), LoginActivity.class);
             intent.setAction(Intent.ACTION_VIEW);
             startActivity(intent);
         });

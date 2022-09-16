@@ -14,6 +14,9 @@ import com.mycompany.starykitapp.login.data.Result;
 import com.mycompany.starykitapp.login.data.LoggedInUser;
 import com.mycompany.starykitapp.login.view.LoggedInUserView;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class LoginViewModel extends ViewModel {
 
     private MutableLiveData<LoginFormState> loginFormState = new MutableLiveData<>();
@@ -32,9 +35,9 @@ public class LoginViewModel extends ViewModel {
         return loginResult;
     }
 
-    public void login(String username, String password) {
+    public void login(String phoneNumber, String password) {
         // can be launched in a separate asynchronous job
-        Result<LoggedInUser> result = loginRepository.login(username, password);
+        Result<LoggedInUser> result = loginRepository.login(phoneNumber, password);
 
         if (result instanceof Result.Success) {
             LoggedInUser data = ((Result.Success<LoggedInUser>) result).getData();
@@ -45,8 +48,8 @@ public class LoginViewModel extends ViewModel {
     }
 
     public void loginDataChanged(String username, String password) {
-        if (!isUserNameValid(username)) {
-            loginFormState.setValue(new LoginFormState(R.string.invalid_username, null));
+        if (!isPhoneNumberValid(username)) {
+            loginFormState.setValue(new LoginFormState(R.string.invalid_phoneNumber, null));
         } else if (!isPasswordValid(password)) {
             loginFormState.setValue(new LoginFormState(null, R.string.invalid_password));
         } else {
@@ -54,16 +57,14 @@ public class LoginViewModel extends ViewModel {
         }
     }
 
-    // A placeholder username validation check
-    private boolean isUserNameValid(String username) {
-        if (username == null) {
+    // A placeholder phoneNumber validation check
+    private boolean isPhoneNumberValid(String phoneNumber) {
+        if (phoneNumber == null) {
             return false;
         }
-        if (username.contains("@")) {
-            return Patterns.EMAIL_ADDRESS.matcher(username).matches();
-        } else {
-            return !username.trim().isEmpty();
-        }
+        String regex = "^((13[0-9])|(15[0-9])|(18[0-9]))\\d{8}$";
+        Pattern pattern = Pattern.compile(regex,Pattern.CASE_INSENSITIVE);
+        return pattern.matcher(phoneNumber).matches();
     }
 
     // A placeholder password validation check

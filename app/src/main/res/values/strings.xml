@@ -1,16 +1,19 @@
 <resources>
-    <string name="app_name">StaryKitApp</string>
+    <string name="app_name">StaryKit</string>
     <string name="title_activity_login">LoginActivity</string>
-    <string name="prompt_email">Email</string>
+    <string name="prompt_email">邮箱</string>
     <string name="prompt_phone_number">手机号码</string>
     <string name="prompt_password">密码</string>
     <string name="action_sign_in">登录或自动注册</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
+    <string name="action_sign_in_short">登录</string>
+    <string name="welcome">借你一个美梦</string>
+    <string name="invalid_phoneNumber">手机号不符合规范</string>
+    <string name="invalid_password">密码长度必须大于5位</string>
+    <string name="home_study">学习区</string>
+    <string name="home_game">游戏区</string>
     <string name="title_activity_settings">SettingsActivity</string>
+    <string name="login_failed">登录失败</string>
+
 
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>
@@ -27,9 +30,9 @@
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
     <string name="title_activity_home">HomeActivity</string>
-    <string name="title_home">Home</string>
+    <string name="title_home">首页</string>
     <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_me">我的</string>
     <string name="title_activity_me">MeActivity</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
@@ -120,5 +123,14 @@
         "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
         "when a user tries to pick up one of cards.\n\n"
     </string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">设置</string>
+    <string name="home_story">晚安故事汇</string>
+    <string name="prompt_forget_password">忘记密码</string>
+    <string name="prompt_register">注册</string>
+    <string name="prompt_hint_register">立即注册</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="forget_password">忘记密码?</string>
+    <string name="intent_register">立即注册</string>
 </resources>

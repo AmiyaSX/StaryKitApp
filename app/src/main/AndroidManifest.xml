@@ -16,6 +16,12 @@
         android:theme="@style/Theme.StaryKitApp"
         tools:targetApi="31">
         <activity
+            android:name=".SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:label="@string/title_activity_splash"
+            android:theme="@style/Theme.StaryKitApp.Fullscreen" />
+        <activity
             android:name=".home.HomeActivity"
             android:exported="false"
             android:label="@string/title_activity_home" />
