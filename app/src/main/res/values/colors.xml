@@ -24,6 +24,8 @@
 
     <color name="color_login_btn_able">#FFF85F6B</color>
     <color name="color_login_btn_unable">#FFDEABAF</color>
+    <color name="color_register_btn_unable">#DCFAB17A</color>
+    <color name="color_register_btn_able">#EF7837</color>
 
     <color name="color_navigation_bar">#FFE6D9C6</color>
     <color name="color_action_bar">#FFB5D0F1</color>
