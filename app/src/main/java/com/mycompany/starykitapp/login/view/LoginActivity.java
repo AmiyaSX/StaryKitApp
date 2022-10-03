@@ -6,6 +6,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -13,7 +14,9 @@ import androidx.annotation.StringRes;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.text.Editable;
+import android.text.InputType;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
@@ -38,56 +41,58 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        ActionBar actionBar = getSupportActionBar();
-        if (actionBar != null) {
-            actionBar.hide();
-        }
         binding = ActivityLoginBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         loginViewModel = new ViewModelProvider(this, new LoginViewModelFactory())
                 .get(LoginViewModel.class);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        viewEventInit();
+    }
+
+    private void viewEventInit() {
         final EditText phoneNumberEditText = binding.phoneNumberEt;
         final EditText passwordEditText = binding.passwordEt;
         final TextView loginButton = binding.loginTv;
         final ProgressBar loadingProgressBar = binding.loading;
-
-        loginViewModel.getLoginFormState().observe(this, new Observer<LoginFormState>() {
-            @Override
-            public void onChanged(@Nullable LoginFormState loginFormState) {
-                if (loginFormState == null) {
-                    return;
-                }
-                if (loginFormState.isDataValid()) {
-                    loginButton.setBackground(getDrawable(R.drawable.bg_login_btn_able));
-                } else {
-                    loginButton.setBackground(getDrawable(R.drawable.bg_login_btn_unable));
-                }
-                if (loginFormState.getPhoneNumberError() != null) {
-                    phoneNumberEditText.setError(getString(loginFormState.getPhoneNumberError()));
-                }
-                if (loginFormState.getPasswordError() != null) {
-                    passwordEditText.setError(getString(loginFormState.getPasswordError()));
-                }
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.hide();
+        }
+        loginViewModel.getLoginFormState().observe(this, loginFormState -> {
+            if (loginFormState == null) {
+                return;
+            }
+            if (loginFormState.isDataValid()) {
+                loginButton.setBackground(getDrawable(R.drawable.bg_login_btn_able));
+            } else {
+                loginButton.setBackground(getDrawable(R.drawable.bg_login_btn_unable));
+            }
+            if (loginFormState.getPhoneNumberError() != null) {
+                phoneNumberEditText.setError(getString(loginFormState.getPhoneNumberError()));
+            }
+            if (loginFormState.getPasswordError() != null) {
+                passwordEditText.setError(getString(loginFormState.getPasswordError()));
             }
         });
 
-        loginViewModel.getLoginResult().observe(this, new Observer<LoginResult>() {
-            @Override
-            public void onChanged(@Nullable LoginResult loginResult) {
-                if (loginResult == null) {
-                    return;
-                }
-                loadingProgressBar.setVisibility(View.GONE);
-                if (loginResult.getError() != null) {
-                    showLoginFailed(loginResult.getError());
-                }
-                if (loginResult.getSuccess() != null) {
-                    updateUiWithUser(loginResult.getSuccess());
-                }
-                setResult(Activity.RESULT_OK);
-                //Complete and destroy login activity once successful
-                finish();
+        loginViewModel.getLoginResult().observe(this, loginResult -> {
+            if (loginResult == null) {
+                return;
             }
+            loadingProgressBar.setVisibility(View.GONE);
+            if (loginResult.getError() != null) {
+                showLoginFailed(loginResult.getError());
+            }
+            if (loginResult.getSuccess() != null) {
+                updateUiWithUser(loginResult.getSuccess());
+            }
+            setResult(Activity.RESULT_OK);
+            //Complete and destroy login activity once successful
+            finish();
         });
 
         TextWatcher afterTextChangedListener = new TextWatcher() {
@@ -109,25 +114,43 @@ public class LoginActivity extends AppCompatActivity {
         };
         phoneNumberEditText.addTextChangedListener(afterTextChangedListener);
         passwordEditText.addTextChangedListener(afterTextChangedListener);
-        passwordEditText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
-
-            @Override
-            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                if (actionId == EditorInfo.IME_ACTION_DONE) {
-                    loginViewModel.login(phoneNumberEditText.getText().toString(),
-                            passwordEditText.getText().toString());
-                }
-                return false;
-            }
-        });
-
-        loginButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                loadingProgressBar.setVisibility(View.VISIBLE);
+        passwordEditText.setOnEditorActionListener((v, actionId, event) -> {
+            if (actionId == EditorInfo.IME_ACTION_DONE) {
                 loginViewModel.login(phoneNumberEditText.getText().toString(),
                         passwordEditText.getText().toString());
             }
+            return false;
+        });
+
+        binding.phoneDeleteIc.setOnClickListener(v -> {
+            phoneNumberEditText.setText("");
+        });
+
+        binding.passwordEyeIc.setOnClickListener(v -> {
+            if (passwordEditText.getInputType() == InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD) {
+                binding.passwordEyeIc.setImageDrawable(getDrawable(R.drawable.ic_preview_close));
+                passwordEditText.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+            } else {
+                binding.passwordEyeIc.setImageDrawable(getDrawable(R.drawable.ic_preview_open));
+                passwordEditText.setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
+            }
+        });
+
+        binding.tvPwdForgot.setOnClickListener(v -> {
+            Intent intent = new Intent(v.getContext(), PwdForgotActivity.class);
+            intent.setAction(Intent.ACTION_VIEW);
+            startActivity(intent);
+        });
+        binding.tvRegister.setOnClickListener(v -> {
+            Intent intent = new Intent(v.getContext(), RegisterActivity.class);
+            intent.setAction(Intent.ACTION_VIEW);
+            startActivity(intent);
+        });
+
+        loginButton.setOnClickListener(v -> {
+            loadingProgressBar.setVisibility(View.VISIBLE);
+            loginViewModel.login(phoneNumberEditText.getText().toString(),
+                    passwordEditText.getText().toString());
         });
     }
 

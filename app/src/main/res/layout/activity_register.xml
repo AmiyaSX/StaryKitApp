@@ -34,7 +34,7 @@
                 android:layout_gravity="center"
                 android:background="@color/gray"/>
             <EditText
-                android:id="@+id/register_password_number_et"
+                android:id="@+id/register_phone_number_et"
                 android:layout_width="220dp"
                 android:layout_height="36dp"
                 android:hint="@string/register_phone_number"
@@ -131,7 +131,7 @@
                 android:selectAllOnFocus="true" />
         </LinearLayout>
         <ImageView
-            android:id="@+id/password_eye_ic"
+            android:id="@+id/password_eye_ic2"
             android:layout_width="wrap_content"
             android:layout_height="36dp"
             android:foregroundGravity="center"
@@ -141,7 +141,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/login_tv"
+        android:id="@+id/register_tv"
         android:layout_width="204dp"
         android:layout_height="39dp"
         android:layout_below="@+id/register_second_password_box"
@@ -159,5 +159,13 @@
         android:layout_marginBottom="-39dp"
         android:src="@drawable/image_earth1" />
 
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="64dp"
+        android:visibility="gone"/>
 
 </RelativeLayout>

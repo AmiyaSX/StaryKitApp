@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         binding.btnJump.setOnClickListener(v -> {
-            Intent intent = new Intent(v.getContext(), HomeActivity.class);
+            Intent intent = new Intent(v.getContext(), LoginActivity.class);
             intent.setAction(Intent.ACTION_VIEW);
             startActivity(intent);
         });

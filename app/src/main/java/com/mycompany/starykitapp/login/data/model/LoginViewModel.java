@@ -10,6 +10,8 @@ import com.mycompany.starykitapp.R;
 import com.mycompany.starykitapp.login.data.LoginFormState;
 import com.mycompany.starykitapp.login.data.LoginRepository;
 import com.mycompany.starykitapp.login.data.LoginResult;
+import com.mycompany.starykitapp.login.data.RegisterFormState;
+import com.mycompany.starykitapp.login.data.RegisterResult;
 import com.mycompany.starykitapp.login.data.Result;
 import com.mycompany.starykitapp.login.data.LoggedInUser;
 import com.mycompany.starykitapp.login.view.LoggedInUserView;
@@ -21,6 +23,8 @@ public class LoginViewModel extends ViewModel {
 
     private MutableLiveData<LoginFormState> loginFormState = new MutableLiveData<>();
     private MutableLiveData<LoginResult> loginResult = new MutableLiveData<>();
+    private MutableLiveData<RegisterFormState> registerFormState = new MutableLiveData<>();
+    private MutableLiveData<RegisterResult> registerResult = new MutableLiveData<>();
     private LoginRepository loginRepository;
 
     LoginViewModel(LoginRepository loginRepository) {
@@ -31,8 +35,16 @@ public class LoginViewModel extends ViewModel {
         return loginFormState;
     }
 
+    public LiveData<RegisterFormState> getRegisterFormState() {
+        return registerFormState;
+    }
+
     public LiveData<LoginResult> getLoginResult() {
         return loginResult;
+    }
+
+    public LiveData<RegisterResult> getRegisterResult() {
+        return registerResult;
     }
 
     public void login(String phoneNumber, String password) {
@@ -47,13 +59,35 @@ public class LoginViewModel extends ViewModel {
         }
     }
 
-    public void loginDataChanged(String username, String password) {
-        if (!isPhoneNumberValid(username)) {
+    public void register(String phoneNumber, String password) {
+        Result<LoggedInUser> result = loginRepository.register(phoneNumber, password);
+        if (result instanceof Result.Success) {
+            LoggedInUser data = ((Result.Success<LoggedInUser>) result).getData();
+            registerResult.setValue(new RegisterResult(new LoggedInUserView(data.getDisplayName())));
+        } else {
+            registerResult.setValue(new RegisterResult(R.string.register_failed));
+        }
+    }
+
+    public void loginDataChanged(String phoneNumber, String password) {
+        if (!isPhoneNumberValid(phoneNumber)) {
             loginFormState.setValue(new LoginFormState(R.string.invalid_phoneNumber, null));
         } else if (!isPasswordValid(password)) {
             loginFormState.setValue(new LoginFormState(null, R.string.invalid_password));
         } else {
             loginFormState.setValue(new LoginFormState(true));
+        }
+    }
+
+    public void registerDataChanged(String phoneNumber, String password1, String password2) {
+        if (!isPhoneNumberValid(phoneNumber)) {
+            registerFormState.setValue(new RegisterFormState(R.string.invalid_phoneNumber, null, null));
+        } else if (!isPasswordValid(password1)) {
+            registerFormState.setValue(new RegisterFormState(null, R.string.invalid_password, null));
+        } else if (!isPasswordValid(password1, password2)) {
+            registerFormState.setValue(new RegisterFormState(null, null, R.string.mismatch_password));
+        } else {
+            registerFormState.setValue(new RegisterFormState(true));
         }
     }
 
@@ -71,4 +105,9 @@ public class LoginViewModel extends ViewModel {
     private boolean isPasswordValid(String password) {
         return password != null && password.trim().length() > 5;
     }
+
+    private boolean isPasswordValid(String password1, String password2) {
+        return password1.equals(password2);
+    }
+
 }

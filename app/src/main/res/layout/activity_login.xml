@@ -135,6 +135,7 @@
         android:layout_marginTop="16dp"
         android:layout_below="@+id/login_tv">
         <TextView
+            android:id="@+id/tv_pwd_forgot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/light_blue_600"
@@ -142,6 +143,7 @@
             android:text="@string/forget_password"/>
 
         <TextView
+            android:id="@+id/tv_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
