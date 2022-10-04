@@ -16,11 +16,11 @@
     <color name="gray">#5D5959</color>
     <color name="accent_hint">#D6D5D5</color>
 
-    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_600">#2CB1F1</color>
     <color name="light_blue_900">#FF01579B</color>
     <color name="light_blue_A200">#FF40C4FF</color>
     <color name="light_blue_A400">#FF00B0FF</color>
-    <color name="black_overlay">#66000000</color>
+    <color name="black_overlay">#667A5656</color>
 
     <color name="color_login_btn_able">#FFF85F6B</color>
     <color name="color_login_btn_unable">#FFDEABAF</color>
@@ -35,5 +35,5 @@
     <color name="color_game_tab_bg">#FFEFCE52</color>
     <color name="color_story_card_bg">#FFC7FAFC</color>
     <color name="color_story_tab_bg">#FF77BFC1</color>
-
+    <color name="color_mine_bar">#7AB8EA</color>
 </resources>
