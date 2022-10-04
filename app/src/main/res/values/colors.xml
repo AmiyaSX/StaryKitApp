@@ -35,5 +35,6 @@
     <color name="color_game_tab_bg">#FFEFCE52</color>
     <color name="color_story_card_bg">#FFC7FAFC</color>
     <color name="color_story_tab_bg">#FF77BFC1</color>
-
+    <color name="color_nightstory_bar">#FF7BD4E3</color>
+    <color name="color_story_new_bg">#FF9BC578</color>
 </resources>
