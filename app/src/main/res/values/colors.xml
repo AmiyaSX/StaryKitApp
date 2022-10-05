@@ -36,4 +36,14 @@
     <color name="color_story_card_bg">#FFC7FAFC</color>
     <color name="color_story_tab_bg">#FF77BFC1</color>
 
+    <color name="color_game_card1">#B4CBA43F</color>
+    <color name="color_game_card2">#D781B337</color>
+    <color name="color_game_card3">#B7CBA43F</color>
+    <color name="color_game_card4">#C9FFBF6B</color>
+    <color name="color_game_card5">#BCBFBF3D</color>
+    <color name="color_game_card6">#D3BFBF3D</color>
+
+
+
+
 </resources>
