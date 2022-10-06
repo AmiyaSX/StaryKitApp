@@ -18,7 +18,7 @@ public class MeFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        MeViewModel notificationsViewModel =
+        MeViewModel meViewModel =
                 new ViewModelProvider(this).get(MeViewModel.class);
 
         binding = FragmentMeBinding.inflate(inflater, container, false);

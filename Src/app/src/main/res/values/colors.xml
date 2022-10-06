@@ -34,8 +34,17 @@
     <color name="color_game_card_bg">#FFFeFBAC</color>
     <color name="color_game_tab_bg">#FFEFCE52</color>
     <color name="color_story_card_bg">#FFC7FAFC</color>
-    <color name="color_story_tab_bg">#FF77BFC1</color>¡¢
+    <color name="color_story_tab_bg">#FF77BFC1</color>
+    <color name="color_game_card1">#B4CBA43F</color>
+    <color name="color_game_card2">#D781B337</color>
+    <color name="color_game_card3">#B7CBA43F</color>
+    <color name="color_game_card4">#C9FFBF6B</color>
+    <color name="color_game_card5">#BCBFBF3D</color>
+    <color name="color_game_card6">#D3BFBF3D</color>
     <color name="color_nightstory_bar">#FF7BD4E3</color>
     <color name="color_story_new_bg">#FF9BC578</color>
     <color name="color_mine_bar">#7AB8EA</color>
+    <color name="color_study_bar">#FF93D2F3</color>
+    <color name="single_add_bg">#FFB3D2F5</color>
+    <color name="complex_add_bg">#FFF5B3B3</color>
 </resources>

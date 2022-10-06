@@ -16,5 +16,10 @@
         android:name="com.mycompany.starykitapp.home.ui.me.MeFragment"
         tools:layout="@layout/fragment_me" />
 
+    <fragment
+        android:id="@+id/navigation_game"
+        android:name="com.mycompany.starykitapp.home.ui.game.GameFragment"
+        tools:layout="@layout/fragment_game" />
+
 
 </navigation>
