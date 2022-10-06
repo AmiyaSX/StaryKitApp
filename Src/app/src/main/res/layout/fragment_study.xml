@@ -1,71 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/image_new_study_bg"
-    tools:context=".home.ui.home.HomeFragment">
+    android:orientation="vertical"
+    android:background="@drawable/image_new_study_bg">
 
-    <FrameLayout
-        android:layout_width="190dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="140dp"
-        android:layout_gravity="left"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="180dp"
-        android:background="@drawable/single_add_bg"
-        android:elevation="25dp">
+        android:layout_marginTop="175dp">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="110dp"
-            android:layout_height="75dp"
-            android:layout_gravity="center"
-            android:layout_marginLeft="3dip"
-            android:layout_marginTop="-30dip"
-            android:foreground="@drawable/single_bg"
-            app:cardCornerRadius="50dp" />
+        <RelativeLayout
+            android:id="@+id/study_card1"
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/single_add_bg">
+
+            <ImageView
+                android:id="@+id/study_single_bg"
+                android:layout_width="105dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/single_bg"/>
 
             <TextView
-                android:id="@+id/single_study"
-                android:layout_width="135dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center"
-                android:layout_marginBottom="-35dip"
-                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/study_single_bg"
+                android:layout_centerInParent="true"
                 android:text="简单算术区"
                 android:textColor="@color/black"
-                android:textSize="22sp" />
-    </FrameLayout>
+                android:textSize="25sp" />
+        </RelativeLayout>
 
-    <FrameLayout
-        android:layout_width="190dp"
-        android:layout_height="140dp"
-        android:layout_gravity="right"
-        android:layout_marginStart="215dp"
-        android:layout_marginTop="180dp"
-        android:background="@drawable/complex_add_bg"
-        android:elevation="25dp">
+        <RelativeLayout
+            android:id="@+id/study_card2"
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/complex_add_bg">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="105dp"
-            android:layout_height="80dp"
-            android:layout_gravity="center"
-            android:layout_marginLeft="3dip"
-            android:layout_marginTop="-30dip"
-            android:foreground="@drawable/complex_bg"
-            app:cardCornerRadius="50dp" />
+            <ImageView
+                android:id="@+id/study_complex_bg"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/complex_bg"/>
 
             <TextView
-                android:id="@+id/complex_study"
-                android:layout_width="135dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center"
-                android:layout_marginBottom="-40dp"
-                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/study_complex_bg"
+                android:layout_centerInParent="true"
                 android:text="复杂算术区"
                 android:textColor="@color/black"
-                android:textSize="22sp" />
-        </FrameLayout>
+                android:textSize="25sp" />
+        </RelativeLayout>
+    </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>
