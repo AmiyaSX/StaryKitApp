@@ -3,6 +3,40 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android Studio/2022-hust-software-project/app/src/main/res/drawable/bg_login_btn_able.xml" value="0.1895" />
+        <entry key="..\:/Android Studio/2022-hust-software-project/app/src/main/res/drawable/bg_story_card.xml" value="0.1895" />
+        <entry key="..\:/Android Studio/2022-hust-software-project/app/src/main/res/drawable/color_game_card_bg.xml" value="0.2145" />
+        <entry key="..\:/Android Studio/2022-hust-software-project/app/src/main/res/drawable/color_game_tab_bg.xml" value="0.2145" />
+        <entry key="..\:/Android Studio/2022-hust-software-project/app/src/main/res/drawable/color_story_tab_bg.xml" value="0.2145" />
+        <entry key="..\:/Android Studio/2022-hust-software-project/app/src/main/res/drawable/color_study_card_bg.xml" value="0.2145" />
+        <entry key="..\:/Android Studio/2022-hust-software-project/app/src/main/res/drawable/color_study_tab_bg.xml" value="0.2145" />
+        <entry key="..\:/Android Studio/2022-hust-software-project/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.2145" />
+        <entry key="..\:/Android Studio/2022-hust-software-project/app/src/main/res/drawable/ic_delete.xml" value="0.2145" />
+        <entry key="..\:/Android Studio/2022-hust-software-project/app/src/main/res/drawable/ic_id_card.xml" value="0.2145" />
+        <entry key="..\:/Android Studio/2022-hust-software-project/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.16030789825970548" />
+        <entry key="..\:/Android Studio/2022-hust-software-project/app/src/main/res/layout-w936dp/activity_login.xml" value="0.18510928961748635" />
+        <entry key="..\:/Android Studio/2022-hust-software-project/app/src/main/res/layout/action_bar_layout.xml" value="0.24547101449275363" />
+        <entry key="..\:/Android Studio/2022-hust-software-project/app/src/main/res/layout/activity_home.xml" value="0.24547101449275363" />
+        <entry key="..\:/Android Studio/2022-hust-software-project/app/src/main/res/layout/activity_login.xml" value="0.24547101449275363" />
+        <entry key="..\:/Android Studio/2022-hust-software-project/app/src/main/res/layout/activity_main.xml" value="0.24547101449275363" />
+        <entry key="..\:/Android Studio/2022-hust-software-project/app/src/main/res/layout/activity_splash.xml" value="0.24547101449275363" />
+        <entry key="..\:/Android Studio/2022-hust-software-project/app/src/main/res/layout/content_scrolling.xml" value="0.24547101449275363" />
+        <entry key="..\:/Android Studio/2022-hust-software-project/app/src/main/res/layout/fragment_home.xml" value="0.24547101449275363" />
+        <entry key="..\:/Android Studio/2022-hust-software-project/app/src/main/res/layout/fragment_me.xml" value="0.24547101449275363" />
+        <entry key="..\:/Android Studio/2022-hust-software-project/app/src/main/res/layout/settings_activity.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/jinxuenan/.ssh/2022-hust-software-project/app/src/main/res/drawable/bg_login_btn_able.xml" value="0.236" />
+        <entry key="..\:/Users/jinxuenan/.ssh/2022-hust-software-project/app/src/main/res/drawable/bg_login_btn_unable.xml" value="0.236" />
+        <entry key="..\:/Users/jinxuenan/.ssh/2022-hust-software-project/app/src/main/res/drawable/bg_register_btn_able.xml" value="0.172" />
+        <entry key="..\:/Users/jinxuenan/.ssh/2022-hust-software-project/app/src/main/res/drawable/bg_register_btn_unable.xml" value="0.236" />
+        <entry key="..\:/Users/jinxuenan/.ssh/2022-hust-software-project/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.14424364123159303" />
+        <entry key="..\:/Users/jinxuenan/.ssh/2022-hust-software-project/app/src/main/res/layout-w936dp/activity_login.xml" value="0.13353825136612021" />
+        <entry key="..\:/Users/jinxuenan/.ssh/2022-hust-software-project/app/src/main/res/layout/action_bar_layout.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/jinxuenan/.ssh/2022-hust-software-project/app/src/main/res/layout/activity_home.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/jinxuenan/.ssh/2022-hust-software-project/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/Users/jinxuenan/.ssh/2022-hust-software-project/app/src/main/res/layout/activity_main.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/jinxuenan/.ssh/2022-hust-software-project/app/src/main/res/layout/activity_register.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/jinxuenan/.ssh/2022-hust-software-project/app/src/main/res/layout/activity_splash.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/jinxuenan/.ssh/2022-hust-software-project/app/src/main/res/layout/fragment_home.xml" value="0.17708333333333334" />
         <entry key="app/src/main/res/drawable/bg_avatar.xml" value="0.1305" />
         <entry key="app/src/main/res/drawable/bg_input_box.xml" value="0.1305" />
         <entry key="app/src/main/res/drawable/bg_login_btn_able.xml" value="0.1" />
