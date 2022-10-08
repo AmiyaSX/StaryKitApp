@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="100dp"
-    android:background="@color/color_action_bar">
+    android:background="@color/color_game_bar">
     <LinearLayout
         android:id="@+id/linear_header_container"
         android:layout_width="wrap_content"
@@ -19,6 +19,6 @@
             android:text="@string/home_game"
             android:textColor="@color/black"
             android:fontFamily="sans-serif-condensed"
-            android:textSize="53dp" />
+            android:textSize="50dp" />
     </LinearLayout>
 </RelativeLayout>

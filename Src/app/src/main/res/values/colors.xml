@@ -14,7 +14,12 @@
     <color name="transparent">#00FFFFFF</color>
 
     <color name="gray">#5D5959</color>
-    <color name="accent_hint">#D6D5D5</color>
+    <color name="accent_hint">#DCDCDC</color>
+
+    <color name="green">#81B337</color>
+    <color name="red">#BD3124</color>
+    <color name="whitegrey">#6FD8D8D8</color>
+    <color name="grey">#6B706D6D</color>
 
     <color name="light_blue_600">#2CB1F1</color>
     <color name="light_blue_900">#FF01579B</color>
@@ -35,6 +40,7 @@
     <color name="color_game_tab_bg">#FFEFCE52</color>
     <color name="color_story_card_bg">#FFC7FAFC</color>
     <color name="color_story_tab_bg">#FF77BFC1</color>
+    <color name="color_game_bar">#BFBF3D</color>
     <color name="color_game_card1">#B4CBA43F</color>
     <color name="color_game_card2">#D781B337</color>
     <color name="color_game_card3">#B7CBA43F</color>
