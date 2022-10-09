@@ -4,103 +4,119 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".home.ui.me.MeFragment">
 
-    <FrameLayout
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mine_user"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:layout_gravity="center"
-        android:layout_marginLeft="170dp"
-        android:layout_marginTop="100dp"
-        android:background="@drawable/bg_mine_user"
-        android:elevation="20dp">
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_gravity="center"
-            android:layout_marginLeft="0.5dip"
-            android:layout_marginTop="0.5dip"
-            android:foreground="@drawable/image_mine_user"
-            app:cardCornerRadius="50dp" />
-    </FrameLayout>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:elevation="20dp"
+        android:foreground="@drawable/image_mine_user"
+        app:cardCornerRadius="1000dp" />
 
     <TextView
-        android:id="@+id/text_username"
+        android:id="@+id/mine_username"
         android:layout_width="100dp"
         android:layout_height="40dp"
-        android:layout_gravity="bottom"
-        android:layout_marginLeft="160dp"
-        android:layout_marginTop="175dp"
+        android:layout_below="@+id/mine_user"
+        android:layout_centerHorizontal="true"
         android:gravity="center"
         android:text="Annla"
         android:textColor="@color/black"
         android:textSize="20sp" />
 
+    <LinearLayout
+        android:id="@+id/mine_function"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_below="@+id/mine_username"
+        android:layout_marginTop="80dp" >
 
-    <TextView
-        android:id="@+id/text_mystory"
+        <LinearLayout
+            android:orientation = "vertical"
+            android:id="@+id/mine_story"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/mine_function"
+            android:foreground="@drawable/image_mine_book"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/mine_function"
+            android:foreground="@drawable/image_mine_target"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/mine_function"
+            android:foreground="@drawable/image_mine_bear"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mine_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_below="@+id/mine_function"
+        android:layout_marginTop="0dp" >
+
+        <TextView
+            android:orientation = "vertical"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/mine_function"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="我的故事"
+            android:textColor="@color/black"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/mine_function"
+            android:layout_marginLeft="20dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="错题集"
+            android:textColor="@color/black"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/mine_t3"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/mine_function"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="我的游戏"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:layout_gravity="bottom"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="350dp"
-        android:gravity="center"
-        android:text="我的故事"
-        android:textColor="@color/black"
-        android:textSize="15sp" />
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="120dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center"
-        android:layout_marginLeft="15dip"
-        android:layout_marginTop="250dip"
-        android:foreground="@drawable/image_mine_book"
-        app:cardCornerRadius="50dp" />
-
-
-    <TextView
-        android:id="@+id/text_mistakes"
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:layout_gravity="bottom"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="350dp"
-        android:gravity="center"
-        android:text="错题集"
-        android:textColor="@color/black"
-        android:textSize="15sp" />
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="120dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center"
-        android:layout_marginLeft="145dip"
-        android:layout_marginTop="250dip"
-        android:foreground="@drawable/image_mine_target"
-        app:cardCornerRadius="50dp" />
-
-    <TextView
-        android:id="@+id/text_mygame"
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:layout_gravity="bottom"
-        android:layout_marginLeft="275dp"
-        android:layout_marginTop="355dp"
-        android:gravity="center"
-        android:text="我的游戏"
-        android:textColor="@color/black"
-        android:textSize="15sp" />
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="120dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center"
-        android:layout_marginLeft="275dip"
-        android:layout_marginTop="250dip"
-        android:foreground="@drawable/image_mine_bear"
-        app:cardCornerRadius="50dp" />
+        android:layout_height="270dp"
+        android:layout_below="@+id/mine_title"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/mine_username"
+        android:layout_weight="1"
+        android:foreground="@drawable/image_mine_cat2"
+        android:orientation="vertical" />
 
 
 </RelativeLayout>

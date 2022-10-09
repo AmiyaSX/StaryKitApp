@@ -5,11 +5,11 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
 import com.mycompany.starykitapp.R;
 import com.mycompany.starykitapp.databinding.FragmentHomeBinding;
@@ -24,11 +24,17 @@ public class HomeFragment extends Fragment {
 
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-
         return root;
     }
 
-
+    @Override
+    public void onResume() {
+        super.onResume();
+        NavController navController = Navigation.findNavController(requireActivity(), R.id.nav_host_fragment_activity_home);
+        binding.gameCard.setOnClickListener( v -> {
+            navController.navigate(R.id.action_navigate_to_GameFragment);
+        });
+    }
 
     @Override
     public void onDestroyView() {

@@ -2,20 +2,25 @@ package com.mycompany.starykitapp.home.ui.game;
 
 import androidx.lifecycle.ViewModelProvider;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
-import com.mycompany.starykitapp.R;
+import com.mycompany.starykitapp.WebViewActivity;
+import com.mycompany.starykitapp.config.GameLink;
 import com.mycompany.starykitapp.databinding.FragmentGameBinding;
-import com.mycompany.starykitapp.databinding.FragmentHomeBinding;
-import com.mycompany.starykitapp.home.ui.home.HomeViewModel;
 
 public class GameFragment extends Fragment {
 
@@ -28,11 +33,40 @@ public class GameFragment extends Fragment {
 
         binding = FragmentGameBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-
         return root;
     }
 
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        initGameEntrance();
+
+    }
+
+    private void initGameEntrance() {
+        Intent intent = new Intent(requireActivity(), WebViewActivity.class);
+        binding.gameCard1.setOnClickListener( v -> {
+            intent.putExtra("url", GameLink.WUZIQI_URL);
+            startActivity(intent);
+        });
+        binding.gameCard2.setOnClickListener(v -> {
+            //TODO
+        });
+        binding.gameCard3.setOnClickListener(v -> {
+            //TODO
+        });
+        binding.gameCard4.setOnClickListener(v -> {
+            //TODO
+        });
+        binding.gameCard5.setOnClickListener(v -> {
+            //TODO
+        });
+        binding.gameCard6.setOnClickListener(v -> {
+            //TODO
+        });
+
+    }
 
     @Override
     public void onDestroyView() {

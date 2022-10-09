@@ -8,7 +8,20 @@
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.mycompany.starykitapp.home.ui.home.HomeFragment"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigate_to_StudyFragment"
+            app:launchSingleTop="true"
+            app:destination="@id/navigation_study" />
+        <action
+            android:id="@+id/action_navigate_to_GameFragment"
+            app:launchSingleTop="true"
+            app:destination="@id/navigation_game" />
+        <action
+            android:id="@+id/action_navigate_to_StoryFragment"
+            app:launchSingleTop="true"
+            app:destination="@id/navigation_story" />
+    </fragment>
 
 
     <fragment
@@ -17,14 +30,20 @@
         tools:layout="@layout/fragment_me" />
 
     <fragment
+        android:id="@+id/navigation_study"
+        android:name="com.mycompany.starykitapp.home.ui.game.GameFragment"
+        tools:layout="@layout/fragment_study" />
+
+    <fragment
+        android:id="@+id/navigation_story"
+        android:name="com.mycompany.starykitapp.home.ui.game.GameFragment"
+        tools:layout="@layout/fragment_story" />
+
+    <fragment
         android:id="@+id/navigation_game"
         android:name="com.mycompany.starykitapp.home.ui.game.GameFragment"
         tools:layout="@layout/fragment_game" />
 
-    <fragment
-        android:id="@+id/navigation_myfault"
-        android:name="com.mycompany.starykitapp.home.ui.myfault.MyfaultFragment"
-        tools:layout="@layout/fragment_myfault"/>
 
 
 </navigation>

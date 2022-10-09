@@ -136,11 +136,6 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        binding.tvPwdForgot.setOnClickListener(v -> {
-            Intent intent = new Intent(v.getContext(), PwdForgotActivity.class);
-            intent.setAction(Intent.ACTION_VIEW);
-            startActivity(intent);
-        });
         binding.tvRegister.setOnClickListener(v -> {
             Intent intent = new Intent(v.getContext(), RegisterActivity.class);
             intent.setAction(Intent.ACTION_VIEW);
