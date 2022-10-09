@@ -51,7 +51,8 @@ public class GameFragment extends Fragment {
             startActivity(intent);
         });
         binding.gameCard2.setOnClickListener(v -> {
-            //TODO
+            intent.putExtra("url", GameLink.WUZIQI_URL);
+            startActivity(intent);
         });
         binding.gameCard3.setOnClickListener(v -> {
             //TODO

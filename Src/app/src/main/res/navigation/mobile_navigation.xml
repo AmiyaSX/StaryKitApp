@@ -31,12 +31,12 @@
 
     <fragment
         android:id="@+id/navigation_study"
-        android:name="com.mycompany.starykitapp.home.ui.game.GameFragment"
+        android:name="com.mycompany.starykitapp.home.ui.study.StudyFragment"
         tools:layout="@layout/fragment_study" />
 
     <fragment
         android:id="@+id/navigation_story"
-        android:name="com.mycompany.starykitapp.home.ui.game.GameFragment"
+        android:name="com.mycompany.starykitapp.home.ui.story.StoryFragment"
         tools:layout="@layout/fragment_story" />
 
     <fragment

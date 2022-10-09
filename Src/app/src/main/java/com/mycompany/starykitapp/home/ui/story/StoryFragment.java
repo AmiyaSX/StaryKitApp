@@ -1,4 +1,4 @@
-package com.mycompany.starykitapp.home.ui.mystory;
+package com.mycompany.starykitapp.home.ui.story;
 
 import androidx.lifecycle.ViewModelProvider;
 
@@ -14,24 +14,24 @@ import android.view.ViewGroup;
 
 import com.mycompany.starykitapp.R;
 
-public class MystoryFragment extends Fragment {
+public class StoryFragment extends Fragment {
 
-    private MystoryViewModel mViewModel;
+    private StoryViewModel mViewModel;
 
-    public static MystoryFragment newInstance() {
-        return new MystoryFragment();
+    public static StoryFragment newInstance() {
+        return new StoryFragment();
     }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_my_story, container, false);
+        return inflater.inflate(R.layout.fragment_story, container, false);
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mViewModel = new ViewModelProvider(this).get(MystoryViewModel.class);
+        mViewModel = new ViewModelProvider(this).get(StoryViewModel.class);
         // TODO: Use the ViewModel
     }
 

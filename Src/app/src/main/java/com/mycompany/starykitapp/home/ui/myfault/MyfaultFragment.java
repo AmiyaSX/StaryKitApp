@@ -12,21 +12,19 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.mycompany.starykitapp.R;
-import com.mycompany.starykitapp.databinding.FragmentGameBinding;
-import com.mycompany.starykitapp.databinding.FragmentMyfaultBinding;
-import com.mycompany.starykitapp.home.ui.game.GameViewModel;
+import com.mycompany.starykitapp.databinding.FragmentMyFaultBinding;
+
 
 public class MyfaultFragment extends Fragment {
 
-    private FragmentMyfaultBinding binding;
+    private FragmentMyFaultBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         MyfaultViewModel myfaultViewModel =
                 new ViewModelProvider(this).get(MyfaultViewModel.class);
 
-        binding = FragmentMyfaultBinding.inflate(inflater, container, false);
+        binding = FragmentMyFaultBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         return root;
