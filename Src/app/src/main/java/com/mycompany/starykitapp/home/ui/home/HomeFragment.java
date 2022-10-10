@@ -34,6 +34,12 @@ public class HomeFragment extends Fragment {
         binding.gameCard.setOnClickListener( v -> {
             navController.navigate(R.id.action_navigate_to_GameFragment);
         });
+        binding.studyCard.setOnClickListener( v -> {
+            navController.navigate(R.id.action_navigate_to_StudyFragment);
+        });
+        binding.storyCard.setOnClickListener( v -> {
+            navController.navigate(R.id.action_navigate_to_StoryFragment);
+        });
     }
 
     @Override

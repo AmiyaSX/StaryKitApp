@@ -2,21 +2,15 @@ package com.mycompany.starykitapp.home.ui.game;
 
 import androidx.lifecycle.ViewModelProvider;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
 
 import com.mycompany.starykitapp.WebViewActivity;
 import com.mycompany.starykitapp.config.GameLink;
@@ -35,7 +29,6 @@ public class GameFragment extends Fragment {
         View root = binding.getRoot();
         return root;
     }
-
 
     @Override
     public void onResume() {

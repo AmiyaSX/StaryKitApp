@@ -14,12 +14,12 @@ import android.view.ViewGroup;
 
 import com.mycompany.starykitapp.R;
 
-public class MystoryFragment extends Fragment {
+public class MyStoryFragment extends Fragment {
 
-    private MystoryViewModel mViewModel;
+    private MyStoryViewModel mViewModel;
 
-    public static MystoryFragment newInstance() {
-        return new MystoryFragment();
+    public static MyStoryFragment newInstance() {
+        return new MyStoryFragment();
     }
 
     @Override
@@ -31,7 +31,7 @@ public class MystoryFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mViewModel = new ViewModelProvider(this).get(MystoryViewModel.class);
+        mViewModel = new ViewModelProvider(this).get(MyStoryViewModel.class);
         // TODO: Use the ViewModel
     }
 

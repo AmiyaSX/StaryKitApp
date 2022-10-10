@@ -3,18 +3,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center_horizontal"
     android:background="@drawable/image_new_study_bg">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="140dp"
-        android:layout_marginTop="175dp">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="140dp">
 
         <RelativeLayout
             android:id="@+id/study_card1"
-            android:layout_width="190dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginLeft="5dp"
             android:background="@drawable/single_add_bg">
 
             <ImageView
@@ -22,7 +24,8 @@
                 android:layout_width="105dp"
                 android:layout_height="80dp"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="36dp"
+                android:layout_marginTop="3dp"
                 android:background="@drawable/single_bg"/>
 
             <TextView
@@ -32,14 +35,15 @@
                 android:layout_centerInParent="true"
                 android:text="简单算术区"
                 android:textColor="@color/black"
-                android:textSize="25sp" />
+                android:textSize="20sp" />
         </RelativeLayout>
-
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
         <RelativeLayout
             android:id="@+id/study_card2"
-            android:layout_width="190dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginLeft="15dp"
             android:background="@drawable/complex_add_bg">
 
             <ImageView
@@ -47,7 +51,8 @@
                 android:layout_width="100dp"
                 android:layout_height="80dp"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="36dp"
+                android:layout_marginTop="3dp"
                 android:background="@drawable/complex_bg"/>
 
             <TextView
@@ -57,7 +62,7 @@
                 android:layout_centerInParent="true"
                 android:text="复杂算术区"
                 android:textColor="@color/black"
-                android:textSize="25sp" />
+                android:textSize="20sp" />
         </RelativeLayout>
     </LinearLayout>
 

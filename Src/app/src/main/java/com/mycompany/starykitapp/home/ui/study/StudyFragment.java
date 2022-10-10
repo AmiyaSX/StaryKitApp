@@ -2,6 +2,7 @@ package com.mycompany.starykitapp.home.ui.study;
 
 import androidx.lifecycle.ViewModelProvider;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -13,11 +14,14 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.mycompany.starykitapp.R;
+import com.mycompany.starykitapp.WebViewActivity;
+import com.mycompany.starykitapp.config.StudyLink;
+import com.mycompany.starykitapp.databinding.FragmentStudyBinding;
 
 public class StudyFragment extends Fragment {
 
     private StudyViewModel mViewModel;
-
+    private FragmentStudyBinding binding;
     public static StudyFragment newInstance() {
         return new StudyFragment();
     }
@@ -25,7 +29,22 @@ public class StudyFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_study, container, false);
+        binding = FragmentStudyBinding.inflate(inflater, container, false);
+        return binding.getRoot();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        Intent intent = new Intent(requireActivity(), WebViewActivity.class);
+        binding.studyCard1.setOnClickListener(v -> {
+            intent.putExtra("url", StudyLink.MATH_EASY_URL);
+            startActivity(intent);
+        });
+        binding.studyCard2.setOnClickListener(v -> {
+            intent.putExtra("url", StudyLink.MATH_MIDIUM_URL);
+            startActivity(intent);
+        });
     }
 
     @Override

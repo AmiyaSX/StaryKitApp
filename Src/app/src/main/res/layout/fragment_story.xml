@@ -8,6 +8,7 @@
     tools:context=".home.ui.home.HomeFragment">
 
     <FrameLayout
+        android:id="@+id/aaa"
         android:layout_width="400dp"
         android:layout_height="140dp"
         android:layout_gravity="center_vertical"

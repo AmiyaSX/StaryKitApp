@@ -10,6 +10,7 @@
     tools:context=".home.ui.home.HomeFragment">
 
     <FrameLayout
+        android:id="@+id/story_card"
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:layout_gravity="center"

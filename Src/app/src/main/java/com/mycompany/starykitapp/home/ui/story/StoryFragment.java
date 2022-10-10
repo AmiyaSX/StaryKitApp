@@ -2,6 +2,7 @@ package com.mycompany.starykitapp.home.ui.story;
 
 import androidx.lifecycle.ViewModelProvider;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -13,11 +14,14 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.mycompany.starykitapp.R;
+import com.mycompany.starykitapp.WebViewActivity;
+import com.mycompany.starykitapp.config.StoryLink;
+import com.mycompany.starykitapp.databinding.FragmentStoryBinding;
 
 public class StoryFragment extends Fragment {
 
     private StoryViewModel mViewModel;
-
+    private FragmentStoryBinding binding;
     public static StoryFragment newInstance() {
         return new StoryFragment();
     }
@@ -25,7 +29,13 @@ public class StoryFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_story, container, false);
+        binding = FragmentStoryBinding.inflate(inflater, container, false);
+        Intent intent = new Intent(requireActivity(), WebViewActivity.class);
+        binding.aaa.setOnClickListener(v -> {
+            intent.putExtra("url", StoryLink.STORY_ALICE_URL);
+            startActivity(intent);
+        });
+        return binding.getRoot();
     }
 
     @Override
