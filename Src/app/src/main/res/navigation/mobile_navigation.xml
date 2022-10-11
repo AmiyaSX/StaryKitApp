@@ -27,7 +27,21 @@
     <fragment
         android:id="@+id/navigation_me"
         android:name="com.mycompany.starykitapp.home.ui.me.MeFragment"
-        tools:layout="@layout/fragment_me" />
+        tools:layout="@layout/fragment_me" >
+        <action
+            android:id="@+id/action_navigate_to_MystoryFragment"
+            app:launchSingleTop="true"
+            app:destination="@+id/navigation_mystory" />
+        <action
+            android:id="@+id/action_navigate_to_MyfaultFragment"
+            app:launchSingleTop="true"
+            app:destination="@+id/navigation_myfault" />
+        <action
+            android:id="@+id/action_navigate_to_MygameFragment"
+            app:launchSingleTop="true"
+            app:destination="@+id/navigation_mygame" />
+    </fragment>
+
 
     <fragment
         android:id="@+id/navigation_study"
@@ -43,6 +57,22 @@
         android:id="@+id/navigation_game"
         android:name="com.mycompany.starykitapp.home.ui.game.GameFragment"
         tools:layout="@layout/fragment_game" />
+
+    <fragment
+        android:id="@+id/navigation_mystory"
+        android:name="com.mycompany.starykitapp.home.ui.mystory.MyStoryFragment"
+        tools:layout="@layout/fragment_my_story" />
+
+    <fragment
+        android:id="@+id/navigation_myfault"
+        android:name="com.mycompany.starykitapp.home.ui.myfault.MyfaultFragment"
+        tools:layout="@layout/fragment_my_fault" />
+
+    <fragment
+        android:id="@+id/navigation_mygame"
+        android:name="com.mycompany.starykitapp.home.ui.mygame.MyGameFragment"
+        tools:layout="@layout/fragment_my_game" />
+
 
 
 
