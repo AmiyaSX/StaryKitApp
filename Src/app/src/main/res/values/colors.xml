@@ -55,4 +55,9 @@
     <color name="complex_add_bg">#FFF5B3B3</color>
     <color name="color_my_story_bar">#F3CEE0</color>
     <color name="color_my_study_bg">#FFF4CE98</color>
+    <color name="color_my_game1_bg">#e1fbb7</color>
+    <color name="color_my_game2_bg">#e3e3e2</color>
+    <color name="color_my_game3_bg">#ffffff</color>
+    <color name="color_my_game_bar">#b8d6a8</color>
+
 </resources>
