@@ -157,12 +157,13 @@
                 android:background="@drawable/ic_star" />
 
         </RelativeLayout>
+
         <RelativeLayout
             android:id="@+id/game_card5"
             android:layout_width="170dp"
             android:layout_height="match_parent"
-            android:layout_toRightOf="@+id/game_card4"
             android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/game_card4"
             android:background="@drawable/bg_game_card5">
 
             <TextView
