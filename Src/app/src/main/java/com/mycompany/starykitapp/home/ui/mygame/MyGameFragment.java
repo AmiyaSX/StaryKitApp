@@ -28,6 +28,7 @@ public class MyGameFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_my_game, container, false);
     }
 
+
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);

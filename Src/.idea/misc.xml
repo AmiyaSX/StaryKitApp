@@ -1,5 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/ic_______1_.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/action_bar_layout.xml" value="0.11524822695035461" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.1308876811594203" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.18432617187500003" />
+        <entry key="app/src/main/res/layout/activity_web_view.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/content_scrolling.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/content_story.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_blank.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_game.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1308876811594203" />
+        <entry key="app/src/main/res/layout/fragment_me.xml" value="0.1308876811594203" />
+        <entry key="app/src/main/res/layout/fragment_my_fault.xml" value="0.1308876811594203" />
+        <entry key="app/src/main/res/layout/fragment_my_game.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_my_story.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_myfault.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_second.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_story.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/game_bar_layout.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/mine_bar_layout.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/my_game_bar_layout.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/myfault_bar_layout.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/mystory_bar_layout.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/nightstory_bar_layout.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/settings_activity.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/study_bar_layout.xml" value="0.1" />
+        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
+        <entry key="app/src/main/res/menu/menu_me.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

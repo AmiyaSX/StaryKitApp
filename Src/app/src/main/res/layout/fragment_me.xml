@@ -47,6 +47,7 @@
             android:layout_weight="1" />
 
         <LinearLayout
+            android:id="@+id/mine_set"
             android:layout_width="100dp"
             android:layout_height="80dp"
             android:layout_below="@+id/mine_function"
@@ -55,6 +56,7 @@
             android:layout_weight="1" />
 
         <LinearLayout
+            android:id="@+id/mine_game"
             android:layout_width="100dp"
             android:layout_height="80dp"
             android:layout_below="@+id/mine_function"
@@ -117,6 +119,5 @@
         android:layout_weight="1"
         android:foreground="@drawable/image_mine_cat2"
         android:orientation="vertical" />
-
 
 </RelativeLayout>
