@@ -1,83 +1,224 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/story_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_story"
     tools:context=".home.ui.home.HomeFragment">
 
-    <FrameLayout
-        android:layout_width="400dp"
-        android:layout_height="140dp"
-        android:layout_gravity="center_vertical"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/color_story_new_bg"
-        android:elevation="20dp">
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="230dp"
-            android:layout_height="130dp"
-            android:layout_gravity="right"
-            android:layout_marginRight="10dip"
-            android:layout_marginTop="5dip"
-            android:foreground="@drawable/newstory"
-            app:cardCornerRadius="35dp" />
-
-        <TextView
-                android:id="@+id/new_text_view"
-                android:layout_width="140dp"
-                android:layout_height="50dp"
-                android:layout_gravity="left"
-                android:gravity="center"
-                android:layout_marginTop="15dip"
-                android:text="推荐作品:"
-                android:textColor="@color/black"
-                android:textSize="23sp" />
-
-        <TextView
-            android:id="@+id/dnew_text_view"
-            android:layout_width="140dp"
-            android:layout_height="40dp"
-            android:layout_gravity="left"
-            android:gravity="center"
-            android:layout_marginTop="60dip"
-            android:layout_marginLeft="25dip"
-            android:text="《清甜之夜》"
-            android:textColor="@color/black"
-            android:textSize="23sp" />
-    </FrameLayout>
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"/>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
         android:scrollbars="vertical">
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <Button
-                android:layout_width="160dp"
-                android:layout_height="230dp"
-                android:text="罗小黑战记"
-                android:textSize="20dp"
-                android:textAllCaps="false"
-                android:layout_marginTop="180dp"/>
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <Button
-                android:layout_width="160dp"
-                android:layout_height="230dp"
-                android:layout_marginTop="180dp"
-                android:layout_marginRight="10dp"
-                android:text="按钮2"
-                android:textAllCaps="false"
-                android:textSize="20dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="195dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginVertical="15dp">
+
+                <RelativeLayout
+                    android:id="@+id/story_card1"
+                    android:layout_width="155dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_story_book">
+
+                    <ImageView
+                        android:id="@+id/story_card_image1"
+                        android:layout_width="match_parent"
+                        android:layout_height="165dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginVertical="0dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/alice" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:text="《爱丽丝梦游仙境》"
+                        android:maxLines="1"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/story_card2"
+                    android:layout_width="155dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="40dp"
+                    android:background="@drawable/bg_story_book">
+
+                    <ImageView
+                        android:id="@+id/story_card_image2"
+                        android:layout_width="match_parent"
+                        android:layout_height="165dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginVertical="0dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/xwz" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:text="《小王子》"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="195dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginVertical="15dp">
+
+                <RelativeLayout
+                    android:id="@+id/story_card3"
+                    android:layout_width="155dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_story_book">
+
+                    <ImageView
+                        android:id="@+id/story_card_image3"
+                        android:layout_width="match_parent"
+                        android:layout_height="165dp"
+                        android:layout_marginVertical="0dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bhl" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:maxLines="1"
+                        android:text="《宝葫芦》"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/story_card4"
+                    android:layout_width="155dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="40dp"
+                    android:background="@drawable/bg_story_book">
+
+                    <ImageView
+                        android:id="@+id/story_card_image4"
+                        android:layout_width="match_parent"
+                        android:layout_height="165dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginVertical="0dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/jrgwstgm" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:text="《假如给我三天光明》"
+                        android:maxLines="1"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="195dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginVertical="15dp">
+
+                <RelativeLayout
+                    android:id="@+id/story_card5"
+                    android:layout_width="155dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_story_book">
+
+                    <ImageView
+                        android:id="@+id/story_card_image5"
+                        android:layout_width="match_parent"
+                        android:layout_height="165dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginVertical="0dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/yqlyy" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:text="《一千零一夜》"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/story_card6"
+                    android:layout_width="155dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="40dp"
+                    android:background="@drawable/bg_story_book">
+
+                    <ImageView
+                        android:id="@+id/story_card_image6"
+                        android:layout_width="match_parent"
+                        android:layout_height="165dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginVertical="0dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/dcr" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:text="《稻草人》"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginVertical="15dp">
+            </LinearLayout>
+
 
         </LinearLayout>
 
     </ScrollView>
 
-</RelativeLayout>
+</LinearLayout>
 
 
 

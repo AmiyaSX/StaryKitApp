@@ -59,8 +59,8 @@ public class LoginViewModel extends ViewModel {
         }
     }
 
-    public void register(String phoneNumber, String password) {
-        Result<LoggedInUser> result = loginRepository.register(phoneNumber, password);
+    public void register(String phoneNumber, String password, String password2) {
+        Result<LoggedInUser> result = loginRepository.register(phoneNumber, password, password2);
         if (result instanceof Result.Success) {
             LoggedInUser data = ((Result.Success<LoggedInUser>) result).getData();
             registerResult.setValue(new RegisterResult(new LoggedInUserView(data.getDisplayName())));

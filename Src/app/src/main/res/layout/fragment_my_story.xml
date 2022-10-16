@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_myfault"
+    tools:context=".home.ui.mystory.MyStoryFragment">
+
+    <RelativeLayout
+        android:id="@+id/mystory_card0"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/story_fish" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/story_fish" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/story_sun" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/mystudy_card1"
+            android:layout_width="134dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/my_story_bg">
+
+            <ImageView
+                android:id="@+id/book_card1"
+                android:layout_width="110dp"
+                android:layout_height="130dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/book_bg"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/book_card1"
+                android:layout_centerInParent="true"
+                android:text="猫小黑战记"
+                android:textColor="@color/black"
+                android:textSize="21sp" />
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+            android:id="@+id/mystudy_card2"
+            android:layout_width="134dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/my_story_bg">
+
+            <ImageView
+                android:id="@+id/book_card2"
+                android:layout_width="110dp"
+                android:layout_height="130dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/book_bg"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/book_card2"
+                android:layout_centerInParent="true"
+                android:text="猫小黑战记"
+                android:textColor="@color/black"
+                android:textSize="21sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/mystory_card3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/story_fish" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/story_sun" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/mystudy_card3"
+            android:layout_width="134dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/my_story_bg">
+
+            <ImageView
+                android:id="@+id/book_card3"
+                android:layout_width="110dp"
+                android:layout_height="130dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/book_bg"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/book_card3"
+                android:layout_centerInParent="true"
+                android:text="猫小黑战记"
+                android:textColor="@color/black"
+                android:textSize="21sp" />
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+            android:id="@+id/mystudy_card4"
+            android:layout_width="134dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/my_story_bg">
+
+            <ImageView
+                android:id="@+id/book_card4"
+                android:layout_width="110dp"
+                android:layout_height="130dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/book_bg"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/book_card4"
+                android:layout_centerInParent="true"
+                android:text="猫小黑战记"
+                android:textColor="@color/black"
+                android:textSize="21sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/image_yellowball" />
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="125dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/story_cat" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

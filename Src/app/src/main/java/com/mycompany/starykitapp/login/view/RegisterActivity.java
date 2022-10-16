@@ -4,8 +4,12 @@ import androidx.annotation.StringRes;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.preference.PreferenceManager;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.InputType;
@@ -19,6 +23,7 @@ import android.widget.Toast;
 
 import com.mycompany.starykitapp.R;
 import com.mycompany.starykitapp.databinding.ActivityRegisterBinding;
+import com.mycompany.starykitapp.home.HomeActivity;
 import com.mycompany.starykitapp.login.data.RegisterFormState;
 import com.mycompany.starykitapp.login.data.model.LoginViewModel;
 import com.mycompany.starykitapp.login.data.model.LoginViewModelFactory;
@@ -27,12 +32,16 @@ public class RegisterActivity extends AppCompatActivity {
 
     private LoginViewModel loginViewModel;
     private ActivityRegisterBinding binding;
+    private SharedPreferences sharedPreferences;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        sharedPreferences = PreferenceManager
+                .getDefaultSharedPreferences(this);
         binding = ActivityRegisterBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        loginViewModel = new ViewModelProvider(this, new LoginViewModelFactory())
+        loginViewModel = new ViewModelProvider(this, new LoginViewModelFactory(sharedPreferences))
                 .get(LoginViewModel.class);
     }
     @Override
@@ -79,6 +88,7 @@ public class RegisterActivity extends AppCompatActivity {
                 showLoginFailed(registerResult.getError());
             }
             if (registerResult.getSuccess() != null) {
+                sharedPreferences.edit().putString(phoneNumberEditText.getText().toString(),passwordEditText1.getText().toString()).commit();
                 updateUiWithUser(registerResult.getSuccess());
             }
             setResult(Activity.RESULT_OK);
@@ -108,7 +118,7 @@ public class RegisterActivity extends AppCompatActivity {
         passwordEditText1.setOnEditorActionListener((v, actionId, event) -> {
             if (actionId == EditorInfo.IME_ACTION_DONE) {
                 loginViewModel.register(phoneNumberEditText.getText().toString(),
-                        passwordEditText1.getText().toString());
+                        passwordEditText1.getText().toString(), passwordEditText2.getText().toString());
             }
             return false;
         });
@@ -134,13 +144,19 @@ public class RegisterActivity extends AppCompatActivity {
                 passwordEditText2.setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
             }
         });
-
+        binding.registerTv.setOnClickListener(v -> {
+            loadingProgressBar.setVisibility(View.VISIBLE);
+            loginViewModel.register(phoneNumberEditText.getText().toString(),
+                    passwordEditText1.getText().toString(),passwordEditText2.getText().toString());
+        });
     }
 
     private void updateUiWithUser(LoggedInUserView model) {
         String welcome = getString(R.string.welcome);
-        // TODO : initiate successful logged in experience
+        Intent intent = new Intent(this, HomeActivity.class);
         Toast.makeText(getApplicationContext(), welcome, Toast.LENGTH_LONG).show();
+        startActivity(intent);
+        finish();
     }
 
     private void showLoginFailed(@StringRes Integer errorString) {

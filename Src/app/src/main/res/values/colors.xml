@@ -14,7 +14,12 @@
     <color name="transparent">#00FFFFFF</color>
 
     <color name="gray">#5D5959</color>
-    <color name="accent_hint">#D6D5D5</color>
+    <color name="accent_hint">#DCDCDC</color>
+
+    <color name="green">#81B337</color>
+    <color name="red">#BD3124</color>
+    <color name="whitegrey">#6FD8D8D8</color>
+    <color name="grey">#6B706D6D</color>
 
     <color name="light_blue_600">#2CB1F1</color>
     <color name="light_blue_900">#FF01579B</color>
@@ -35,6 +40,7 @@
     <color name="color_game_tab_bg">#FFEFCE52</color>
     <color name="color_story_card_bg">#FFC7FAFC</color>
     <color name="color_story_tab_bg">#FF77BFC1</color>
+    <color name="color_game_bar">#BFBF3D</color>
     <color name="color_game_card1">#B4CBA43F</color>
     <color name="color_game_card2">#D781B337</color>
     <color name="color_game_card3">#B7CBA43F</color>
@@ -47,4 +53,11 @@
     <color name="color_study_bar">#FF93D2F3</color>
     <color name="single_add_bg">#FFB3D2F5</color>
     <color name="complex_add_bg">#FFF5B3B3</color>
+    <color name="color_my_story_bar">#F3CEE0</color>
+    <color name="color_my_study_bg">#FFF4CE98</color>
+    <color name="color_my_game1_bg">#e1fbb7</color>
+    <color name="color_my_game2_bg">#e3e3e2</color>
+    <color name="color_my_game3_bg">#ffffff</color>
+    <color name="color_my_game_bar">#b8d6a8</color>
+
 </resources>

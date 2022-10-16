@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_myfault"
+    tools:context=".home.ui.myfault.MyfaultFragment">
+
+    <RelativeLayout
+        android:id="@+id/game_card6"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/ic_star" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/myfault_card1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/grey">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <TextView
+                android:id="@+id/myfalt_formula1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="0dp"
+                android:text="36+52="
+                android:textColor="#000000"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/myfault_correct1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="0dp"
+                android:text="88"
+                android:textColor="@color/green"
+                android:textSize="40sp" />
+            <TextView
+                android:id="@+id/myfault_fault1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="40dp"
+                android:text="77"
+                android:textColor="@color/red"
+                android:textSize="35sp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/ic_star" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/myfault_card2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/whitegrey">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <TextView
+                android:id="@+id/myfalt_formula2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="0dp"
+                android:text="36+52="
+                android:textColor="#000000"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/myfault_correct2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="0dp"
+                android:text="88"
+                android:textColor="@color/green"
+                android:textSize="40sp" />
+            <TextView
+                android:id="@+id/myfault_fault2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="40dp"
+                android:text="77"
+                android:textColor="@color/red"
+                android:textSize="35sp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/ic_star" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/myfault_card3"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/grey">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <TextView
+                android:id="@+id/myfalt_formula3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="0dp"
+                android:text="36+52="
+                android:textColor="#000000"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/myfault_correct3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="0dp"
+                android:text="88"
+                android:textColor="@color/green"
+                android:textSize="40sp" />
+            <TextView
+                android:id="@+id/myfault_fault3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="40dp"
+                android:text="77"
+                android:textColor="@color/red"
+                android:textSize="35sp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/ic_star" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/myfault_card4"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/whitegrey">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <TextView
+                android:id="@+id/myfalt_formula4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="0dp"
+                android:text="36+52="
+                android:textColor="#000000"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/myfault_correct4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="0dp"
+                android:text="88"
+                android:textColor="@color/green"
+                android:textSize="40sp" />
+            <TextView
+                android:id="@+id/myfault_fault4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="40dp"
+                android:text="77"
+                android:textColor="@color/red"
+                android:textSize="35sp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/ic_star" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/myfault_card5"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/grey">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <TextView
+                android:id="@+id/myfalt_formula5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="0dp"
+                android:text="36+52="
+                android:textColor="#000000"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/myfault_correct5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="0dp"
+                android:text="88"
+                android:textColor="@color/green"
+                android:textSize="40sp" />
+            <TextView
+                android:id="@+id/myfault_fault5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="40dp"
+                android:text="77"
+                android:textColor="@color/red"
+                android:textSize="35sp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/ic_star" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/myfault_card6"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/whitegrey">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <TextView
+                android:id="@+id/myfalt_formula6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="0dp"
+                android:text="36+52="
+                android:textColor="#000000"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/myfault_correct6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="0dp"
+                android:text="88"
+                android:textColor="@color/green"
+                android:textSize="40sp" />
+            <TextView
+                android:id="@+id/myfault_fault6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="40dp"
+                android:text="77"
+                android:textColor="@color/red"
+                android:textSize="35sp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/ic_star" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="38dp"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@drawable/image_yellowball"/>
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="115dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/image_greycat" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

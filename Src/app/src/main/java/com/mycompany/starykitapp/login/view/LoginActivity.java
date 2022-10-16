@@ -6,21 +6,20 @@ import androidx.appcompat.app.ActionBar;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
-import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.preference.PreferenceManager;
 
 import android.text.Editable;
 import android.text.InputType;
 import android.text.TextWatcher;
-import android.util.Log;
-import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -28,8 +27,7 @@ import android.widget.Toast;
 
 import com.mycompany.starykitapp.R;
 import com.mycompany.starykitapp.databinding.ActivityLoginBinding;
-import com.mycompany.starykitapp.login.data.LoginFormState;
-import com.mycompany.starykitapp.login.data.LoginResult;
+import com.mycompany.starykitapp.home.HomeActivity;
 import com.mycompany.starykitapp.login.data.model.LoginViewModel;
 import com.mycompany.starykitapp.login.data.model.LoginViewModelFactory;
 
@@ -37,13 +35,16 @@ public class LoginActivity extends AppCompatActivity {
 
     private LoginViewModel loginViewModel;
     private ActivityLoginBinding binding;
+    private SharedPreferences sharedPreferences;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        sharedPreferences = PreferenceManager
+                .getDefaultSharedPreferences(this);
         binding = ActivityLoginBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        loginViewModel = new ViewModelProvider(this, new LoginViewModelFactory())
+        loginViewModel = new ViewModelProvider(this, new LoginViewModelFactory(sharedPreferences))
                 .get(LoginViewModel.class);
     }
 
@@ -89,10 +90,11 @@ public class LoginActivity extends AppCompatActivity {
             }
             if (loginResult.getSuccess() != null) {
                 updateUiWithUser(loginResult.getSuccess());
+                setResult(Activity.RESULT_OK);
+                Intent intent = new Intent(this, HomeActivity.class);
+                startActivity(intent);
+                finish();
             }
-            setResult(Activity.RESULT_OK);
-            //Complete and destroy login activity once successful
-            finish();
         });
 
         TextWatcher afterTextChangedListener = new TextWatcher() {
@@ -136,11 +138,6 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        binding.tvPwdForgot.setOnClickListener(v -> {
-            Intent intent = new Intent(v.getContext(), PwdForgotActivity.class);
-            intent.setAction(Intent.ACTION_VIEW);
-            startActivity(intent);
-        });
         binding.tvRegister.setOnClickListener(v -> {
             Intent intent = new Intent(v.getContext(), RegisterActivity.class);
             intent.setAction(Intent.ACTION_VIEW);
@@ -156,7 +153,6 @@ public class LoginActivity extends AppCompatActivity {
 
     private void updateUiWithUser(LoggedInUserView model) {
         String welcome = getString(R.string.welcome);
-        // TODO : initiate successful logged in experience
         Toast.makeText(getApplicationContext(), welcome, Toast.LENGTH_LONG).show();
     }
 

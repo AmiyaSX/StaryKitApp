@@ -6,11 +6,11 @@ package com.mycompany.starykitapp.login.data;
 public class LoggedInUser {
 
     private String userId;
-    private String displayName;
+    private String name;
 
-    public LoggedInUser(String userId, String displayName) {
+    public LoggedInUser(String userId, String name) {
         this.userId = userId;
-        this.displayName = displayName;
+        this.name = name;
     }
 
     public String getUserId() {
@@ -18,6 +18,6 @@ public class LoggedInUser {
     }
 
     public String getDisplayName() {
-        return displayName;
+        return name;
     }
 }
