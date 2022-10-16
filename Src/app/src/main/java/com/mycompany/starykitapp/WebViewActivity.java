@@ -18,6 +18,7 @@ import com.mycompany.starykitapp.databinding.ActivityWebViewBinding;
 public class WebViewActivity extends AppCompatActivity {
     private ActivityWebViewBinding binding;
     private String url;
+    private int backCount = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,15 +41,17 @@ public class WebViewActivity extends AppCompatActivity {
 
     @Override
     public boolean onKeyUp(int keyCode, KeyEvent event) {
-        if (KeyEvent.KEYCODE_BACK == keyCode) {
-            if (binding.webView != null && binding.webView.canGoBack()) {
-                binding.webView.goBack();
-            } else {
-                finish();
-            }
-            return true;
+        backCount++;
+        if (backCount>=1) {
+            finish();
         }
-        return super.onKeyUp(keyCode, event);
+        return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+
     }
 
     @SuppressLint("SetJavaScriptEnabled")

@@ -38,20 +38,20 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="220dp"
-        android:layout_marginTop="5dp">
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:orientation="horizontal">
 
         <RelativeLayout
             android:id="@+id/mystudy_card1"
-            android:layout_width="170dp"
+            android:layout_width="134dp"
             android:layout_height="match_parent"
-            android:layout_marginLeft="30dp"
             android:background="@drawable/my_story_bg">
 
             <ImageView
                 android:id="@+id/book_card1"
-                android:layout_width="140dp"
-                android:layout_height="150dp"
+                android:layout_width="110dp"
+                android:layout_height="130dp"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/book_bg"/>
@@ -66,17 +66,20 @@
                 android:textSize="21sp" />
         </RelativeLayout>
 
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="match_parent"/>
+
         <RelativeLayout
             android:id="@+id/mystudy_card2"
-            android:layout_width="170dp"
+            android:layout_width="134dp"
             android:layout_height="match_parent"
-            android:layout_marginLeft="15dp"
             android:background="@drawable/my_story_bg">
 
             <ImageView
                 android:id="@+id/book_card2"
-                android:layout_width="140dp"
-                android:layout_height="150dp"
+                android:layout_width="110dp"
+                android:layout_height="130dp"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/book_bg"/>
@@ -113,23 +116,22 @@
             android:layout_centerInParent="true"
             android:background="@drawable/story_sun" />
     </RelativeLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="220dp"
-        android:layout_marginTop="5dp">
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:orientation="horizontal">
 
         <RelativeLayout
-            android:id="@+id/mystudy_card4"
-            android:layout_width="170dp"
+            android:id="@+id/mystudy_card3"
+            android:layout_width="134dp"
             android:layout_height="match_parent"
-            android:layout_marginLeft="30dp"
             android:background="@drawable/my_story_bg">
 
             <ImageView
                 android:id="@+id/book_card3"
-                android:layout_width="140dp"
-                android:layout_height="150dp"
+                android:layout_width="110dp"
+                android:layout_height="130dp"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/book_bg"/>
@@ -144,17 +146,20 @@
                 android:textSize="21sp" />
         </RelativeLayout>
 
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="match_parent"/>
+
         <RelativeLayout
-            android:id="@+id/mystudy_card5"
-            android:layout_width="170dp"
+            android:id="@+id/mystudy_card4"
+            android:layout_width="134dp"
             android:layout_height="match_parent"
-            android:layout_marginLeft="15dp"
             android:background="@drawable/my_story_bg">
 
             <ImageView
                 android:id="@+id/book_card4"
-                android:layout_width="140dp"
-                android:layout_height="150dp"
+                android:layout_width="110dp"
+                android:layout_height="130dp"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/book_bg"/>
@@ -168,8 +173,8 @@
                 android:textColor="@color/black"
                 android:textSize="21sp" />
         </RelativeLayout>
-
     </LinearLayout>
+
 
     <RelativeLayout
         android:layout_marginTop="30dp"

@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.mycompany.starykitapp.R;
+import com.mycompany.starykitapp.databinding.FragmentGameBinding;
 
 public class MyGameFragment extends Fragment {
 
@@ -22,12 +23,24 @@ public class MyGameFragment extends Fragment {
         return new MyGameFragment();
     }
 
+    private FragmentGameBinding binding;
+
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_my_game, container, false);
+        binding = FragmentGameBinding.inflate(inflater, container, false);
+        return binding.getRoot();
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        initEvent();
+    }
+
+    private void initEvent() {
+
+    }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
