@@ -44,20 +44,24 @@ public class GameFragment extends Fragment {
             startActivity(intent);
         });
         binding.gameCard2.setOnClickListener(v -> {
-            intent.putExtra("url", GameLink.WUZIQI_URL);
+            intent.putExtra("url", GameLink.CHENYUJIELONG_URL);
             startActivity(intent);
         });
         binding.gameCard3.setOnClickListener(v -> {
-            //TODO
+            intent.putExtra("url", GameLink.LIANLIANKAN_URL);
+            startActivity(intent);
         });
         binding.gameCard4.setOnClickListener(v -> {
-            //TODO
+            intent.putExtra("url", GameLink.TIANSE_URL);
+            startActivity(intent);
         });
         binding.gameCard5.setOnClickListener(v -> {
-            //TODO
+            intent.putExtra("url", GameLink.SHU_DU_URL);
+            startActivity(intent);
         });
         binding.gameCard6.setOnClickListener(v -> {
-            //TODO
+            intent.putExtra("url", GameLink.XIAOXIAOLE_URL);
+            startActivity(intent);
         });
 
     }

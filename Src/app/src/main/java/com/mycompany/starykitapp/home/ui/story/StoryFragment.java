@@ -30,12 +30,43 @@ public class StoryFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         binding = FragmentStoryBinding.inflate(inflater, container, false);
+
+        initEvent();
+
+        return binding.getRoot();
+    }
+
+    private void initEvent() {
         Intent intent = new Intent(requireActivity(), WebViewActivity.class);
         binding.aaa.setOnClickListener(v -> {
             intent.putExtra("url", StoryLink.STORY_ALICE_URL);
             startActivity(intent);
         });
-        return binding.getRoot();
+        binding.storyCard1.setOnClickListener(v -> {
+            intent.putExtra("url", StoryLink.STORY_ALICE_URL);
+            startActivity(intent);
+        });
+        binding.storyCard2.setOnClickListener(v -> {
+            intent.putExtra("url", StoryLink.STORY_XIAOWANGZI_URL);
+            startActivity(intent);
+        });
+        binding.storyCard3.setOnClickListener(v -> {
+            intent.putExtra("url", StoryLink.STORY_BAOHULU_URL);
+            startActivity(intent);
+        });
+        binding.storyCard4.setOnClickListener(v -> {
+            intent.putExtra("url", StoryLink.STORY_JRGWSTGM_URL);
+            startActivity(intent);
+        });
+        binding.storyCard5.setOnClickListener(v -> {
+            intent.putExtra("url", StoryLink.STORY_YIQIANLINGYI_URL);
+            startActivity(intent);
+        });
+        binding.storyCard6.setOnClickListener(v -> {
+            intent.putExtra("url", StoryLink.STORY_DAOCAOREN_URL);
+            startActivity(intent);
+        });
+
     }
 
     @Override
