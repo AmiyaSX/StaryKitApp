@@ -25,7 +25,7 @@
             android:name=".SplashActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="true"
-            android:label="@string/title_activity_splash"
+            android:label="@string/app_name"
             android:theme="@style/Theme.StaryKitApp.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -38,16 +38,14 @@
             android:exported="false"
             android:label="@string/title_activity_home" />
         <activity
-            android:name=".setting.SettingsActivity"
-            android:exported="false"
-            android:label="@string/title_activity_settings" />
-        <activity
             android:name=".login.view.LoginActivity"
             android:exported="false"
             android:label="@string/title_activity_login" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true">
+
+        </activity>
     </application>
 
 </manifest>

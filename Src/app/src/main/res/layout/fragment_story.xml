@@ -9,15 +9,10 @@
     android:background="@drawable/bg_story"
     tools:context=".home.ui.home.HomeFragment">
 
-    <FrameLayout
-        android:id="@+id/aaa"
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
         android:layout_width="match_parent"
-        android:layout_height="145dp"
-        android:layout_gravity="center_vertical"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/banner1"
-        android:elevation="20dp">
-    </FrameLayout>
+        android:layout_height="180dp"/>
 
     <ScrollView
         android:layout_width="match_parent"

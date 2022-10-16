@@ -1,21 +1,14 @@
 package com.mycompany.starykitapp;
 
-import android.annotation.SuppressLint;
-
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Looper;
-import android.view.MotionEvent;
-import android.view.View;
-import android.view.WindowInsets;
 
 import com.mycompany.starykitapp.databinding.ActivitySplashBinding;
 import com.mycompany.starykitapp.home.HomeActivity;
+import com.mycompany.starykitapp.login.view.LoginActivity;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -34,13 +27,13 @@ public class SplashActivity extends AppCompatActivity {
         super.onResume();
         new Thread(() -> {
             try {
-                Thread.sleep(3000);
+                Thread.sleep(2000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
             //睡3秒后跳转页面
             //跳转页面
-            Intent intent = new Intent(SplashActivity.this, HomeActivity.class);
+            Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
             startActivity(intent);
             finish();
         }).start();
