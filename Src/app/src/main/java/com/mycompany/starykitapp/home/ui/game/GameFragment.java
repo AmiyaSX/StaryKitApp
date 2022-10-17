@@ -50,7 +50,6 @@ public class GameFragment extends Fragment {
         ) {
             @Override
             public void handleOnBackPressed() {
-                Toast.makeText(requireActivity(), "aaaaaa", Toast.LENGTH_SHORT).show();
                 Navigation.findNavController(requireActivity(), R.id.nav_host_fragment_activity_home).navigate(R.id.action_back_to_HomeFragment);
             }
         };
