@@ -9,7 +9,6 @@
     tools:context=".home.ui.mystory.MyStoryFragment">
 
     <RelativeLayout
-        android:id="@+id/mystory_card0"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="@color/white">
@@ -43,7 +42,7 @@
         android:orientation="horizontal">
 
         <RelativeLayout
-            android:id="@+id/mystudy_card1"
+            android:id="@+id/mystory_card1"
             android:layout_width="134dp"
             android:layout_height="match_parent"
             android:background="@drawable/my_story_bg">
@@ -54,14 +53,14 @@
                 android:layout_height="130dp"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/book_bg"/>
+                android:background="@drawable/yqlyy" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/book_card1"
                 android:layout_centerInParent="true"
-                android:text="猫小黑战记"
+                android:text="一千零一夜"
                 android:textColor="@color/black"
                 android:textSize="21sp" />
         </RelativeLayout>
@@ -71,7 +70,7 @@
             android:layout_height="match_parent"/>
 
         <RelativeLayout
-            android:id="@+id/mystudy_card2"
+            android:id="@+id/mystory_card2"
             android:layout_width="134dp"
             android:layout_height="match_parent"
             android:background="@drawable/my_story_bg">
@@ -82,14 +81,14 @@
                 android:layout_height="130dp"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/book_bg"/>
+                android:background="@drawable/bhl" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/book_card2"
                 android:layout_centerInParent="true"
-                android:text="猫小黑战记"
+                android:text="宝葫芦"
                 android:textColor="@color/black"
                 android:textSize="21sp" />
         </RelativeLayout>
@@ -97,7 +96,6 @@
 
 
     <RelativeLayout
-        android:id="@+id/mystory_card3"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@color/white">
@@ -134,14 +132,14 @@
                 android:layout_height="130dp"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/book_bg"/>
+                android:background="@drawable/dcr" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/book_card3"
                 android:layout_centerInParent="true"
-                android:text="猫小黑战记"
+                android:text="稻草人"
                 android:textColor="@color/black"
                 android:textSize="21sp" />
         </RelativeLayout>
@@ -151,7 +149,7 @@
             android:layout_height="match_parent"/>
 
         <RelativeLayout
-            android:id="@+id/mystudy_card4"
+            android:id="@+id/mystory_card4"
             android:layout_width="134dp"
             android:layout_height="match_parent"
             android:background="@drawable/my_story_bg">
@@ -162,14 +160,14 @@
                 android:layout_height="130dp"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/book_bg"/>
+                android:background="@drawable/xwz" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/book_card4"
                 android:layout_centerInParent="true"
-                android:text="猫小黑战记"
+                android:text="小王子"
                 android:textColor="@color/black"
                 android:textSize="21sp" />
         </RelativeLayout>
@@ -185,7 +183,8 @@
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_marginStart="38dp"
-            android:layout_marginTop="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="35dp"
             android:background="@drawable/image_yellowball" />
 
         <ImageView

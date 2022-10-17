@@ -51,6 +51,7 @@
                 android:text="88"
                 android:textColor="@color/green"
                 android:textSize="40sp" />
+
             <TextView
                 android:id="@+id/myfault_fault1"
                 android:layout_width="wrap_content"
@@ -58,9 +59,11 @@
                 android:layout_marginHorizontal="40dp"
                 android:text="77"
                 android:textColor="@color/red"
-                android:textSize="35sp"/>
+                android:textSize="35sp" />
+
 
         </LinearLayout>
+
 
         <ImageView
             android:layout_width="wrap_content"
@@ -82,12 +85,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true">
+
             <TextView
                 android:id="@+id/myfalt_formula2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="0dp"
-                android:text="36+52="
+                android:text="57+52+9="
                 android:textColor="#000000"
                 android:textSize="35sp" />
 
@@ -96,17 +100,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="0dp"
-                android:text="88"
+                android:text="118"
                 android:textColor="@color/green"
                 android:textSize="40sp" />
+
             <TextView
                 android:id="@+id/myfault_fault2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="40dp"
-                android:text="77"
+                android:text="108"
                 android:textColor="@color/red"
-                android:textSize="35sp"/>
+                android:textSize="35sp" />
 
         </LinearLayout>
 
@@ -135,7 +140,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="0dp"
-                android:text="36+52="
+                android:text="111-54="
                 android:textColor="#000000"
                 android:textSize="35sp" />
 
@@ -144,7 +149,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="0dp"
-                android:text="88"
+                android:text="57"
                 android:textColor="@color/green"
                 android:textSize="40sp" />
             <TextView
@@ -152,7 +157,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="40dp"
-                android:text="77"
+                android:text="67"
                 android:textColor="@color/red"
                 android:textSize="35sp"/>
 
@@ -183,7 +188,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="0dp"
-                android:text="36+52="
+                android:text="35+19-54="
                 android:textColor="#000000"
                 android:textSize="35sp" />
 
@@ -192,7 +197,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="0dp"
-                android:text="88"
+                android:text="0"
                 android:textColor="@color/green"
                 android:textSize="40sp" />
             <TextView
@@ -200,7 +205,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="40dp"
-                android:text="77"
+                android:text="10"
                 android:textColor="@color/red"
                 android:textSize="35sp"/>
 
@@ -231,7 +236,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="0dp"
-                android:text="36+52="
+                android:text="78+43-29="
                 android:textColor="#000000"
                 android:textSize="35sp" />
 
@@ -240,7 +245,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="0dp"
-                android:text="88"
+                android:text="92"
                 android:textColor="@color/green"
                 android:textSize="40sp" />
             <TextView
@@ -248,7 +253,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="40dp"
-                android:text="77"
+                android:text="0"
                 android:textColor="@color/red"
                 android:textSize="35sp"/>
 
@@ -279,7 +284,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="0dp"
-                android:text="36+52="
+                android:text="65-73="
                 android:textColor="#000000"
                 android:textSize="35sp" />
 
@@ -288,7 +293,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="0dp"
-                android:text="88"
+                android:text="-8"
                 android:textColor="@color/green"
                 android:textSize="40sp" />
             <TextView
@@ -296,7 +301,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="40dp"
-                android:text="77"
+                android:text="8"
                 android:textColor="@color/red"
                 android:textSize="35sp"/>
 
