@@ -33,7 +33,7 @@ public class SplashActivity extends AppCompatActivity {
             }
             //睡3秒后跳转页面
             //跳转页面
-            Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
+            Intent intent = new Intent(SplashActivity.this, HomeActivity.class);
             startActivity(intent);
             finish();
         }).start();

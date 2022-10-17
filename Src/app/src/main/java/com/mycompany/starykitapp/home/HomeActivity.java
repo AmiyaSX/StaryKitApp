@@ -39,11 +39,25 @@ public class HomeActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(binding.navView, navController);
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        if(item.getItemId() == android.R.id.home){
+            try {
+                navController.navigate(R.id.action_back_to_HomeFragment);
+            } catch (Exception e) {
+                navController.navigate(R.id.action_back_to_MeFragment);
+            }
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
     private void initActionBar() {
         ActionBar actionBar = getSupportActionBar();
         actionBar.setBackgroundDrawable(getDrawable(R.color.color_action_bar));
         actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         actionBar.setCustomView(R.layout.action_bar_layout);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);//添加默认的返回图标
+        getSupportActionBar().setHomeButtonEnabled(true); //设置返回键可用
     }
 }

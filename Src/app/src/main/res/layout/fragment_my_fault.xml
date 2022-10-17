@@ -102,7 +102,7 @@
                 android:layout_marginHorizontal="0dp"
                 android:text="118"
                 android:textColor="@color/green"
-                android:textSize="40sp" />
+                android:textSize="38sp" />
 
             <TextView
                 android:id="@+id/myfault_fault2"
@@ -110,8 +110,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="40dp"
                 android:text="108"
+                android:maxLines="1"
                 android:textColor="@color/red"
-                android:textSize="35sp" />
+                android:textSize="30sp" />
 
         </LinearLayout>
 

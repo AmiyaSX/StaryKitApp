@@ -1,13 +1,16 @@
 package com.mycompany.starykitapp.home.ui.story;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.lifecycle.ViewModelProvider;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -50,16 +53,28 @@ public class StoryFragment extends Fragment {
         return binding.getRoot();
     }
     public void useBanner() {
-
-
-        //--------------------------简单使用-------------------------------
         binding.banner.addBannerLifecycleObserver(requireActivity())//添加生命周期观察者
                 .setAdapter(new ImageAdapter(dataBeans))
                 .addBannerLifecycleObserver(requireActivity())//添加生命周期观察者
                 .setIndicator(new CircleIndicator(requireActivity()));
-        //更多使用方法仔细阅读文档，或者查看demo
     }
-
+    @Override
+    public void onAttach(@NonNull Context context) {
+        super.onAttach(context);
+        //定义回调
+        OnBackPressedCallback callback = new OnBackPressedCallback(
+                true // default to enabled
+        ) {
+            @Override
+            public void handleOnBackPressed() {
+                Navigation.findNavController(requireActivity(), R.id.nav_host_fragment_activity_home).navigate(R.id.action_back_to_HomeFragment);
+            }
+        };
+        //获取Activity的返回键分发器添加回调
+        requireActivity().getOnBackPressedDispatcher().addCallback(
+                this, // LifecycleOwner
+                callback);
+    }
     private void initEvent() {
         Intent intent = new Intent(requireActivity(), WebViewActivity.class);
         useBanner();
