@@ -38,16 +38,20 @@
             <TextView
                 android:id="@+id/text_view"
                 android:layout_width="wrap_content"
-                android:layout_height="60dp"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="晚安故事会"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="19dp" />
         </FrameLayout>
 
     </FrameLayout>
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal">
     <FrameLayout
         android:id="@+id/study_card"
         android:layout_width="140dp"
@@ -58,8 +62,8 @@
         android:elevation="20dp">
 
         <androidx.cardview.widget.CardView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:layout_gravity="left"
             android:layout_marginLeft="8dip"
             android:layout_marginTop="8dip"
@@ -67,7 +71,7 @@
             app:cardCornerRadius="50dp" />
 
         <FrameLayout
-            android:layout_width="90dp"
+            android:layout_width="75dp"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:layout_marginTop="35dip"
@@ -78,12 +82,12 @@
             <TextView
                 android:id="@+id/text_study"
                 android:layout_width="wrap_content"
-                android:layout_height="45dp"
+                android:layout_height="40dp"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="学习区"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="18dp" />
         </FrameLayout>
 
     </FrameLayout>
@@ -99,8 +103,8 @@
         android:elevation="20dp">
 
         <androidx.cardview.widget.CardView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:layout_gravity="left"
             android:layout_marginLeft="8dip"
             android:layout_marginTop="8dip"
@@ -108,7 +112,7 @@
             app:cardCornerRadius="50dp" />
 
         <FrameLayout
-            android:layout_width="90dp"
+            android:layout_width="75dp"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:layout_marginTop="35dip"
@@ -119,14 +123,16 @@
             <TextView
                 android:id="@+id/text_game"
                 android:layout_width="wrap_content"
-                android:layout_height="45dp"
+                android:layout_height="40dp"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="游戏区"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="18dp" />
         </FrameLayout>
 
     </FrameLayout>
+
+</LinearLayout>
 
 </RelativeLayout>
