@@ -9,9 +9,9 @@
 
     <RelativeLayout
         android:id="@+id/wuziqi"
-        android:layout_width="300dp"
-        android:layout_height="87dp"
-        android:layout_marginLeft="13dp"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="40dp"
         android:layout_marginTop="130dp"
         android:background="@drawable/color_my_game_bg1">
 
@@ -21,17 +21,17 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentBottom="true"
             android:layout_marginLeft="33dp"
-            android:layout_marginBottom="14dp"
+            android:layout_marginBottom="10dp"
             android:text="五子棋"
             android:textColor="@color/black"
-            android:textSize="45sp" />
+            android:textSize="35sp" />
 
         <ImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginRight="49dp"
+            android:layout_marginRight="30dp"
             android:layout_marginBottom="1dp"
             android:background="@drawable/my_game_star1" />
 
@@ -39,8 +39,8 @@
 
     <RelativeLayout
         android:id="@+id/shudu"
-        android:layout_width="250dp"
-        android:layout_height="87dp"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
         android:layout_below="@+id/wuziqi"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
@@ -56,26 +56,26 @@
             android:layout_marginBottom="14dp"
             android:text="数独"
             android:textColor="@color/black"
-            android:textSize="45sp" />
+            android:textSize="35sp" />
 
         <ImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginRight="49dp"
+            android:layout_marginRight="30dp"
             android:layout_marginBottom="1dp"
             android:background="@drawable/my_game_star2" />
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/llk"
-        android:layout_width="200dp"
-        android:layout_height="87dp"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
         android:layout_below="@+id/shudu"
         android:layout_alignParentRight="true"
         android:layout_marginTop="20dp"
-        android:layout_marginRight="48dp"
+        android:layout_marginRight="80dp"
         android:background="@drawable/color_my_game_bg3"
         android:orientation="horizontal">
 
@@ -84,11 +84,11 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginLeft="33dp"
+            android:layout_marginLeft="25dp"
             android:layout_marginBottom="14dp"
             android:text="连连看"
             android:textColor="@color/black"
-            android:textSize="45sp" />
+            android:textSize="35sp" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -97,7 +97,7 @@
         android:layout_height="70dp"
         android:layout_below="@+id/llk"
         android:layout_alignParentLeft="true"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="100dp"
         android:layout_marginLeft="45dp"
         android:background="@drawable/image_yellowball"
         android:orientation="horizontal">
@@ -108,8 +108,7 @@
         android:layout_height="150dp"
         android:layout_below="@+id/llk"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="120dp"
-        android:layout_marginLeft="45dp"
+        android:layout_marginTop="100dp"
         android:background="@drawable/image_my_game_bgcat"
         android:orientation="horizontal">
     </RelativeLayout>
