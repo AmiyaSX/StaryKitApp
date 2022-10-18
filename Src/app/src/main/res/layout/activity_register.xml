@@ -7,7 +7,7 @@
         android:layout_width="84dp"
         android:layout_height="79dp"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="390px"
+        android:layout_marginTop="120dp"
         android:layout_marginEnd="10dp"
         android:src="@drawable/image_carrot" />
 
@@ -57,7 +57,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:layout_marginVertical="50dp"
+        android:layout_marginVertical="40dp"
         android:orientation="horizontal">
         <LinearLayout
             android:layout_width="wrap_content"
@@ -152,8 +152,9 @@
         android:text="@string/action_register_short" />
 
     <ImageView
+        android:id="@+id/a"
         android:layout_width="match_parent"
-        android:layout_height="258dp"
+        android:layout_height="208dp"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="380px"
         android:layout_marginBottom="-39dp"
