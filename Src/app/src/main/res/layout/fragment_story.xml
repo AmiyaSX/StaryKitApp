@@ -26,14 +26,14 @@
             android:orientation="vertical">
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="195dp"
+                android:layout_width="320dp"
+                android:layout_height="180dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginVertical="15dp">
 
                 <RelativeLayout
                     android:id="@+id/story_card1"
-                    android:layout_width="155dp"
+                    android:layout_width="135dp"
                     android:layout_height="match_parent"
                     android:background="@drawable/bg_story_book">
 
@@ -54,13 +54,13 @@
                         android:text="《爱丽丝梦游仙境》"
                         android:maxLines="1"
                         android:textColor="#000000"
-                        android:textSize="16sp" />
+                        android:textSize="13dp" />
 
                 </RelativeLayout>
 
                 <RelativeLayout
                     android:id="@+id/story_card2"
-                    android:layout_width="155dp"
+                    android:layout_width="135dp"
                     android:layout_height="match_parent"
                     android:layout_marginStart="40dp"
                     android:background="@drawable/bg_story_book">
@@ -81,20 +81,20 @@
                         android:layout_centerInParent="true"
                         android:text="《小王子》"
                         android:textColor="#000000"
-                        android:textSize="16sp" />
+                        android:textSize="13dp" />
 
                 </RelativeLayout>
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="195dp"
+                android:layout_width="320dp"
+                android:layout_height="180dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginVertical="15dp">
 
                 <RelativeLayout
                     android:id="@+id/story_card3"
-                    android:layout_width="155dp"
+                    android:layout_width="135dp"
                     android:layout_height="match_parent"
                     android:background="@drawable/bg_story_book">
 
@@ -114,13 +114,13 @@
                         android:maxLines="1"
                         android:text="《宝葫芦》"
                         android:textColor="#000000"
-                        android:textSize="16sp" />
+                        android:textSize="13dp" />
 
                 </RelativeLayout>
 
                 <RelativeLayout
                     android:id="@+id/story_card4"
-                    android:layout_width="155dp"
+                    android:layout_width="135dp"
                     android:layout_height="match_parent"
                     android:layout_marginStart="40dp"
                     android:background="@drawable/bg_story_book">
@@ -142,20 +142,20 @@
                         android:text="《假如给我三天光明》"
                         android:maxLines="1"
                         android:textColor="#000000"
-                        android:textSize="13sp" />
+                        android:textSize="13dp" />
 
                 </RelativeLayout>
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="195dp"
+                android:layout_width="320dp"
+                android:layout_height="180dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginVertical="15dp">
 
                 <RelativeLayout
                     android:id="@+id/story_card5"
-                    android:layout_width="155dp"
+                    android:layout_width="135dp"
                     android:layout_height="match_parent"
                     android:background="@drawable/bg_story_book">
 
@@ -175,13 +175,13 @@
                         android:layout_centerInParent="true"
                         android:text="《一千零一夜》"
                         android:textColor="#000000"
-                        android:textSize="16sp" />
+                        android:textSize="13dp" />
 
                 </RelativeLayout>
 
                 <RelativeLayout
                     android:id="@+id/story_card6"
-                    android:layout_width="155dp"
+                    android:layout_width="135dp"
                     android:layout_height="match_parent"
                     android:layout_marginStart="40dp"
                     android:background="@drawable/bg_story_book">
@@ -202,13 +202,13 @@
                         android:layout_centerInParent="true"
                         android:text="《稻草人》"
                         android:textColor="#000000"
-                        android:textSize="16sp" />
+                        android:textSize="13dp" />
 
                 </RelativeLayout>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="140dp"
+                android:layout_height="130dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginVertical="15dp">
             </LinearLayout>

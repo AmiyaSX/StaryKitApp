@@ -20,8 +20,9 @@ import com.mycompany.starykitapp.R;
 import com.mycompany.starykitapp.WebViewActivity;
 import com.mycompany.starykitapp.config.GameLink;
 import com.mycompany.starykitapp.databinding.FragmentGameBinding;
+import com.mycompany.starykitapp.utils.CustomAdapt;
 
-public class GameFragment extends Fragment {
+public class GameFragment extends Fragment implements CustomAdapt {
 
     private FragmentGameBinding binding;
 
@@ -91,5 +92,15 @@ public class GameFragment extends Fragment {
     public void onDestroyView() {
         super.onDestroyView();
         binding = null;
+    }
+
+    @Override
+    public boolean isBaseOnWidth() {
+        return true;
+    }
+
+    @Override
+    public float getSizeInDp() {
+        return 720;
     }
 }

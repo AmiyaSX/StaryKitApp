@@ -12,7 +12,7 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:elevation="20dp"
         android:foreground="@drawable/image_mine_user"
         app:cardCornerRadius="1000dp" />
@@ -35,7 +35,7 @@
         android:layout_centerHorizontal="true"
         android:orientation="horizontal"
         android:layout_below="@+id/mine_username"
-        android:layout_marginTop="80dp" >
+        android:layout_marginTop="60dp" >
 
         <LinearLayout
             android:orientation = "vertical"
@@ -114,7 +114,7 @@
         android:layout_height="270dp"
         android:layout_below="@+id/mine_title"
         android:layout_marginLeft="43dp"
-        android:layout_marginTop="7dp"
+        android:layout_marginTop="0dp"
         android:layout_toRightOf="@+id/mine_username"
         android:layout_weight="1"
         android:foreground="@drawable/image_mine_cat2"

@@ -11,124 +11,128 @@
 
     <FrameLayout
         android:id="@+id/story_card"
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_width="320dp"
+        android:layout_height="100dp"
         android:layout_gravity="center"
         android:layout_marginTop="210dp"
-        android:layout_marginHorizontal="20dp"
+        android:layout_marginHorizontal="50dp"
         android:background="@drawable/bg_story_card"
         android:elevation="20dp">
 
         <androidx.cardview.widget.CardView
-            android:layout_width="85dp"
-            android:layout_height="85dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_gravity="center_vertical"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="20dp"
             android:foreground="@drawable/nights"
             app:cardCornerRadius="50dp" />
 
         <FrameLayout
-            android:layout_width="190dp"
+            android:layout_width="170dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginRight="-60dp"
+            android:layout_marginRight="-50dp"
             android:background="@drawable/color_story_tab_bg"
             android:elevation="20dp">
 
             <TextView
                 android:id="@+id/text_view"
                 android:layout_width="wrap_content"
-                android:layout_height="70dp"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="晚安故事会"
                 android:textColor="#FFFFFF"
-                android:textSize="25sp" />
+                android:textSize="19dp" />
         </FrameLayout>
 
     </FrameLayout>
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal">
     <FrameLayout
         android:id="@+id/study_card"
-        android:layout_width="170dp"
-        android:layout_height="100dp"
-        android:layout_gravity="left"
+        android:layout_width="140dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="120dp"
         android:layout_toLeftOf="@+id/game_card"
-        android:layout_marginTop="100dp"
-        android:layout_marginStart="10dp"
         android:background="@drawable/color_study_card_bg"
         android:elevation="20dp">
 
         <androidx.cardview.widget.CardView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:layout_gravity="left"
-            android:layout_marginLeft="7dip"
-            android:layout_marginTop="7dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginTop="8dip"
             android:foreground="@drawable/study"
             app:cardCornerRadius="50dp" />
 
         <FrameLayout
-            android:layout_width="130dp"
+            android:layout_width="75dp"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
-            android:layout_marginTop="50dip"
-            android:layout_marginRight="5dip"
+            android:layout_marginTop="35dip"
+            android:layout_marginRight="6dip"
             android:background="@drawable/color_study_tab_bg"
             android:elevation="20dp">
 
             <TextView
                 android:id="@+id/text_study"
                 android:layout_width="wrap_content"
-                android:layout_height="45dp"
+                android:layout_height="40dp"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="学习区"
                 android:textColor="#FFFFFF"
-                android:textSize="25sp" />
+                android:textSize="18dp" />
         </FrameLayout>
 
     </FrameLayout>
 
     <FrameLayout
         android:id="@+id/game_card"
-        android:layout_width="170dp"
-        android:layout_height="100dp"
+        android:layout_width="140dp"
+        android:layout_height="80dp"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="120dp"
         android:layout_marginHorizontal="10dp"
         android:background="@drawable/color_game_card_bg"
         android:elevation="20dp">
 
         <androidx.cardview.widget.CardView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:layout_gravity="left"
-            android:layout_marginLeft="7dip"
-            android:layout_marginTop="7dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginTop="8dip"
             android:foreground="@drawable/game"
             app:cardCornerRadius="50dp" />
 
         <FrameLayout
-            android:layout_width="130dp"
+            android:layout_width="75dp"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
-            android:layout_marginTop="45dip"
-            android:layout_marginRight="5dip"
+            android:layout_marginTop="35dip"
+            android:layout_marginRight="6dip"
             android:background="@drawable/color_game_tab_bg"
             android:elevation="20dp">
 
             <TextView
                 android:id="@+id/text_game"
                 android:layout_width="wrap_content"
-                android:layout_height="45dp"
+                android:layout_height="40dp"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="游戏区"
                 android:textColor="#FFFFFF"
-                android:textSize="25sp" />
+                android:textSize="18dp" />
         </FrameLayout>
 
     </FrameLayout>
+
+</LinearLayout>
 
 </RelativeLayout>

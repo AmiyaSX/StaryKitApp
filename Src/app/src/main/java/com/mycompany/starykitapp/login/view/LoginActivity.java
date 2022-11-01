@@ -68,8 +68,10 @@ public class LoginActivity extends AppCompatActivity {
                 return;
             }
             if (loginFormState.isDataValid()) {
+                loginButton.setClickable(true);
                 loginButton.setBackground(getDrawable(R.drawable.bg_login_btn_able));
             } else {
+                loginButton.setClickable(false);
                 loginButton.setBackground(getDrawable(R.drawable.bg_login_btn_unable));
             }
             if (loginFormState.getPhoneNumberError() != null) {

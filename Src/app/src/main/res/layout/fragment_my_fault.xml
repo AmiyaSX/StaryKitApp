@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_centerInParent="true"
-            android:layout_marginEnd="25dp"
+            android:layout_marginEnd="5dp"
             android:background="@drawable/ic_star" />
 
     </RelativeLayout>
@@ -27,39 +27,38 @@
     <RelativeLayout
         android:id="@+id/myfault_card1"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="60dp"
         android:background="@color/grey">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true">
+
             <TextView
                 android:id="@+id/myfalt_formula1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="0dp"
                 android:text="36+52="
                 android:textColor="#000000"
-                android:textSize="35sp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/myfault_correct1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="0dp"
                 android:text="88"
                 android:textColor="@color/green"
-                android:textSize="40sp" />
+                android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/myfault_fault1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="40dp"
+                android:layout_marginHorizontal="5dp"
                 android:text="77"
                 android:textColor="@color/red"
-                android:textSize="35sp" />
+                android:textSize="20sp" />
 
 
         </LinearLayout>
@@ -70,7 +69,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_centerInParent="true"
-            android:layout_marginEnd="25dp"
+            android:layout_marginEnd="5dp"
             android:background="@drawable/ic_star" />
 
     </RelativeLayout>
@@ -78,7 +77,7 @@
     <RelativeLayout
         android:id="@+id/myfault_card2"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="60dp"
         android:background="@color/whitegrey">
 
         <LinearLayout
@@ -93,7 +92,7 @@
                 android:layout_marginHorizontal="0dp"
                 android:text="57+52+9="
                 android:textColor="#000000"
-                android:textSize="35sp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/myfault_correct2"
@@ -102,18 +101,18 @@
                 android:layout_marginHorizontal="0dp"
                 android:text="118"
                 android:textColor="@color/green"
-                android:textSize="38sp" />
+                android:textSize="25sp" />
+
 
             <TextView
                 android:id="@+id/myfault_fault2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="40dp"
+                android:layout_marginHorizontal="5dp"
                 android:text="108"
                 android:maxLines="1"
                 android:textColor="@color/red"
-                android:textSize="30sp" />
-
+                android:textSize="20sp" />
         </LinearLayout>
 
         <ImageView
@@ -121,7 +120,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_centerInParent="true"
-            android:layout_marginEnd="25dp"
+            android:layout_marginEnd="5dp"
             android:background="@drawable/ic_star" />
 
     </RelativeLayout>
@@ -129,7 +128,7 @@
     <RelativeLayout
         android:id="@+id/myfault_card3"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="60dp"
         android:background="@color/grey">
 
         <LinearLayout
@@ -143,24 +142,23 @@
                 android:layout_marginHorizontal="0dp"
                 android:text="111-54="
                 android:textColor="#000000"
-                android:textSize="35sp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/myfault_correct3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="0dp"
                 android:text="57"
                 android:textColor="@color/green"
-                android:textSize="40sp" />
+                android:textSize="25sp" />
             <TextView
                 android:id="@+id/myfault_fault3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="40dp"
+                android:layout_marginHorizontal="5dp"
                 android:text="67"
                 android:textColor="@color/red"
-                android:textSize="35sp"/>
+                android:textSize="20sp"/>
 
         </LinearLayout>
 
@@ -169,7 +167,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_centerInParent="true"
-            android:layout_marginEnd="25dp"
+            android:layout_marginEnd="5dp"
             android:background="@drawable/ic_star" />
 
     </RelativeLayout>
@@ -177,7 +175,7 @@
     <RelativeLayout
         android:id="@+id/myfault_card4"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="60dp"
         android:background="@color/whitegrey">
 
         <LinearLayout
@@ -191,7 +189,7 @@
                 android:layout_marginHorizontal="0dp"
                 android:text="35+19-54="
                 android:textColor="#000000"
-                android:textSize="35sp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/myfault_correct4"
@@ -200,15 +198,15 @@
                 android:layout_marginHorizontal="0dp"
                 android:text="0"
                 android:textColor="@color/green"
-                android:textSize="40sp" />
+                android:textSize="25sp" />
             <TextView
                 android:id="@+id/myfault_fault4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="40dp"
+                android:layout_marginHorizontal="5dp"
                 android:text="10"
                 android:textColor="@color/red"
-                android:textSize="35sp"/>
+                android:textSize="20sp"/>
 
         </LinearLayout>
 
@@ -217,7 +215,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_centerInParent="true"
-            android:layout_marginEnd="25dp"
+            android:layout_marginEnd="5dp"
             android:background="@drawable/ic_star" />
 
     </RelativeLayout>
@@ -225,7 +223,7 @@
     <RelativeLayout
         android:id="@+id/myfault_card5"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="60dp"
         android:background="@color/grey">
 
         <LinearLayout
@@ -239,7 +237,7 @@
                 android:layout_marginHorizontal="0dp"
                 android:text="78+43-29="
                 android:textColor="#000000"
-                android:textSize="35sp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/myfault_correct5"
@@ -248,15 +246,15 @@
                 android:layout_marginHorizontal="0dp"
                 android:text="92"
                 android:textColor="@color/green"
-                android:textSize="40sp" />
+                android:textSize="25sp" />
             <TextView
                 android:id="@+id/myfault_fault5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="40dp"
+                android:layout_marginHorizontal="5dp"
                 android:text="0"
                 android:textColor="@color/red"
-                android:textSize="35sp"/>
+                android:textSize="20sp"/>
 
         </LinearLayout>
 
@@ -265,7 +263,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_centerInParent="true"
-            android:layout_marginEnd="25dp"
+            android:layout_marginEnd="5dp"
             android:background="@drawable/ic_star" />
 
     </RelativeLayout>
@@ -273,13 +271,14 @@
     <RelativeLayout
         android:id="@+id/myfault_card6"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="60dp"
         android:background="@color/whitegrey">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true">
+
             <TextView
                 android:id="@+id/myfalt_formula6"
                 android:layout_width="wrap_content"
@@ -287,24 +286,24 @@
                 android:layout_marginHorizontal="0dp"
                 android:text="65-73="
                 android:textColor="#000000"
-                android:textSize="35sp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/myfault_correct6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="0dp"
                 android:text="-8"
                 android:textColor="@color/green"
-                android:textSize="40sp" />
+                android:textSize="25sp" />
+
             <TextView
                 android:id="@+id/myfault_fault6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="40dp"
+                android:layout_marginHorizontal="5dp"
                 android:text="8"
                 android:textColor="@color/red"
-                android:textSize="35sp"/>
+                android:textSize="20sp" />
 
         </LinearLayout>
 
@@ -313,7 +312,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_centerInParent="true"
-            android:layout_marginEnd="25dp"
+            android:layout_marginEnd="5dp"
             android:background="@drawable/ic_star" />
 
     </RelativeLayout>
@@ -321,20 +320,20 @@
         android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <ImageView
-            android:layout_marginTop="50dp"
-            android:layout_marginStart="38dp"
             android:layout_width="65dp"
             android:layout_height="65dp"
-            android:background="@drawable/image_yellowball"/>
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/image_yellowball" />
 
         <ImageView
             android:layout_width="140dp"
             android:layout_height="115dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="15dp"
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="25dp"
+            android:layout_marginBottom="15dp"
             android:background="@drawable/image_greycat" />
 
     </RelativeLayout>
