@@ -65,8 +65,17 @@ public class RegisterActivity extends AppCompatActivity {
                 return;
             }
             if (registerFormState.isDataValid()) {
+                registerButton.setClickable(true);
+                registerButton.setOnClickListener(v -> {
+                    loadingProgressBar.setVisibility(View.VISIBLE);
+                    if (v.isClickable()) {
+                        loginViewModel.register(phoneNumberEditText.getText().toString(),
+                                passwordEditText1.getText().toString(),passwordEditText2.getText().toString());
+                    }
+                });
                 registerButton.setBackground(getDrawable(R.drawable.bg_register_btn_able));
             } else {
+                registerButton.setClickable(false);
                 registerButton.setBackground(getDrawable(R.drawable.bg_register_btn_unable));
             }
             if (registerFormState.getPhoneNumberError() != null) {
@@ -144,11 +153,7 @@ public class RegisterActivity extends AppCompatActivity {
                 passwordEditText2.setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
             }
         });
-        binding.registerTv.setOnClickListener(v -> {
-            loadingProgressBar.setVisibility(View.VISIBLE);
-            loginViewModel.register(phoneNumberEditText.getText().toString(),
-                    passwordEditText1.getText().toString(),passwordEditText2.getText().toString());
-        });
+
     }
 
     private void updateUiWithUser(LoggedInUserView model) {
